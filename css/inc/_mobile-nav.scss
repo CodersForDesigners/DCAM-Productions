@@ -1,0 +1,37 @@
+/* -----------------------------------------
+	10. Mobile menu
+----------------------------------------- */
+.mm-page {
+  position: static;
+}
+
+.mm-opened {
+  .mm-page {
+    position: relative;
+  }
+}
+
+#mobilemenu {
+	display: none;
+
+	@include media-breakpoint-down(md) {
+		display: block;
+	}
+}
+
+.mobile-nav-trigger {
+	float: right;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: none;
+	color: inherit;
+	font-size: 16px;
+
+	&:hover {
+		color: inherit;
+	}
+
+	@include media-breakpoint-down(md) {
+		display: inline-block;
+	}
+}

@@ -1,0 +1,394 @@
+/* -----------------------------------------
+	04. Hero Area
+----------------------------------------- */
+
+/* Basic Styles
+=================================== */
+.page-hero {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 190px 0 70px;
+	background-color: $accent-secondary;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	color: $white;
+	text-align: center;
+
+	@include media-breakpoint-up(xl) {
+		&.hover-left {
+			background-image: linear-gradient(to right, $accent-secondary-light 50%, $accent-secondary 50%);
+		}
+
+		&.hover-right {
+			background-image: linear-gradient(to right, $accent-secondary 50%, $accent-secondary-light 50%);
+		}
+	}
+
+	// Overlay color, apply background color here
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 12;
+	}
+
+	.slick-initialized & {
+		display: flex;
+	}
+
+	.btn {
+		margin-top: 25px;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding-top: 150px;
+		padding-bottom: 50px;
+	}
+}
+
+.page-hero-lg {
+	text-align: center;
+
+	.page-hero-slideshow & {
+		height: 100%;
+	}
+}
+
+.page-hero-align-center {
+	text-align: center;
+}
+
+.page-hero-align-left {
+	text-align: left;
+}
+
+.page-hero-align-right {
+	text-align: right;
+}
+
+.page-hero-align-top {
+	align-items: flex-start;
+
+	@include media-breakpoint-down(md) {
+		align-items: center;
+	}
+}
+
+.page-hero-align-middle {
+	align-items: center;
+}
+
+.page-hero-align-bottom {
+	align-items: flex-end;
+
+	@include media-breakpoint-down(md) {
+		align-items: center;
+	}
+}
+
+.page-hero-content {
+	position: relative;
+	z-index: 25;
+	margin-bottom: 70px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.page-hero-lg & {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	@include media-breakpoint-up(md) {
+		.page-hero-lg & {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 45px;
+
+		.page-hero-lg & {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.page-hero-title {
+	color: inherit;
+	margin: 0;
+	font-size: 36px;
+
+	a {
+		color: inherit;
+
+		&:hover {
+			opacity: .9;
+		}
+	}
+
+	.page-hero-lg & {
+		font-size: 48px;
+	}
+
+	@include media-breakpoint-down(md) {
+		font-size: 28px;
+
+		.page-hero-lg & {
+			font-size: 36px;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 26px;
+
+		.page-hero-lg & {
+			font-size: 30px;
+		}
+	}
+}
+
+.page-hero-subtitle {
+	margin: 0;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: .22em;
+	line-height: 1.2;
+}
+
+.page-hero-categories {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: .22em;
+	margin: 0 0 5px;
+
+	a {
+		color: $white;
+		border-bottom: 3px solid transparent;
+
+		&:hover {
+			border-color: $accent-color;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 12px;
+	}
+}
+
+.page-hero-meta {
+	margin: 0;
+	color: $white;
+	font-family: $secondary-font;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: .22em;
+	line-height: normal;
+
+	&::before {
+		content: "\2022";
+		display: block;
+		font-size: 26px;
+		line-height: normal;
+		margin: 0 0 3px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 12px;
+	}
+}
+
+.page-hero-video-wrap {
+	margin-bottom: -150px;
+	position: relative;
+	z-index: 25;
+	box-shadow: 0 0 60px rgba($black, .25);
+	padding-top: 56.2406%; // 16:9
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		box-shadow: inset 0 0 180px rgba(0, 0, 0, 1);
+		transition: all 150ms ease-out;
+	}
+
+	&:hover {
+		&::before {
+			box-shadow: inset 0 0 260px rgba(0, 0, 0, 1);
+		}
+	}
+
+	iframe,
+	video {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: -100px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 0;
+	}
+}
+
+.page-hero-video-trigger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Sticky Videos
+=================================== */
+@keyframes fade-in-up {
+  0% { opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.page-hero-video-sticky {
+	.page-hero-video-wrap {
+		iframe {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		@include media-breakpoint-up(lg) {
+			&.stuck {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				width: 420px;
+				height: 236px;
+				transform: translateY(100%);
+				animation: fade-in-up .25s ease forwards;
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+}
+
+/* Slideshow
+=================================== */
+.page-hero-slideshow {
+	position: relative;
+
+	.slick-list,
+	.slick-track {
+		height: 100%;
+		overflow: visible;
+		transform: translate3d(0, 0, 0);
+
+		@include media-breakpoint-down(sm) {
+			overflow: hidden;
+		}
+	}
+}
+
+.vidiho-pro-slick-slider {
+	.slick-arrow {
+		@include slide-nav-arrow;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 30;
+
+		@include media-breakpoint-down(sm) {
+			display: none !important;
+			visibility: hidden;
+		}
+	}
+
+	.slick-next {
+		right: 0;
+
+		.fa {
+			position: relative;
+			left: 2px;
+		}
+	}
+
+	.slick-prev {
+		left: 0;
+
+		.fa {
+			position: relative;
+			right: 1px;
+		}
+	}
+
+	.slick-dots {
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+		width: 100%;
+		bottom: 40px;
+
+		li {
+			display: inline-block;
+			margin: 0 10px;
+		}
+
+		button {
+			position: relative;
+			text-indent: -999em;
+			padding: 0;
+			margin: 0;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background-color: $white;
+			border: 0;
+			box-shadow: none;
+			cursor: pointer;
+
+			&::before {
+				content: "";
+				display: inline-block;
+				position: absolute;
+				top: -6px;
+				left: -6px;
+				border-radius: 50%;
+				width: 20px;
+				height: 20px;
+				border: 2px solid $white;
+				opacity: 0;
+				transition: opacity .18s ease;
+			}
+		}
+
+		.slick-active {
+			button {
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

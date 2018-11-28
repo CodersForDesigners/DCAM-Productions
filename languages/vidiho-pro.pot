@@ -1,0 +1,1774 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Vidiho Pro\n"
+"POT-Creation-Date: 2018-08-22 16:50+0300\n"
+"PO-Revision-Date: 2015-10-10 19:53+0300\n"
+"Last-Translator: Anastis Sourgoutsidis <anastis@cssigniter.com>\n"
+"Language-Team: Anastis Sourgoutsidis <anastis@cssigniter.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: plugins\n"
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:25
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the "
+"links below or a search?"
+msgstr ""
+
+#: comments.php:51
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:40
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:41
+msgid "Main Menu - Right"
+msgstr ""
+
+#: functions.php:237
+msgid "Intro text (big text)"
+msgstr ""
+
+#: functions.php:243
+msgid "2 Column Text"
+msgstr ""
+
+#: functions.php:285
+msgid "Hide when viewing this post's page"
+msgstr ""
+
+#: inc/customizer.php:22
+msgctxt "customizer section title"
+msgid "Header"
+msgstr ""
+
+#: inc/customizer.php:27
+msgctxt "customizer section title"
+msgid "Header style"
+msgstr ""
+
+#: inc/customizer.php:34 inc/customizer.php:93
+msgctxt "customizer section title"
+msgid "Primary menu bar"
+msgstr ""
+
+#: inc/customizer.php:46
+msgctxt "customizer section title"
+msgid "Blog settings"
+msgstr ""
+
+#: inc/customizer.php:51
+msgctxt "customizer section title"
+msgid "Archive options"
+msgstr ""
+
+#: inc/customizer.php:53
+msgid ""
+"Customize the default archive pages, such as the blog, category, tag, date "
+"archives, etc."
+msgstr ""
+
+#: inc/customizer.php:59
+msgctxt "customizer section title"
+msgid "Post options"
+msgstr ""
+
+#: inc/customizer.php:70
+msgctxt "customizer section title"
+msgid "Video settings"
+msgstr ""
+
+#: inc/customizer.php:76
+msgctxt "customizer section title"
+msgid "Video options"
+msgstr ""
+
+#: inc/customizer.php:87
+msgctxt "customizer section title"
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer.php:102
+msgctxt "customizer section title"
+msgid "Hero"
+msgstr ""
+
+#: inc/customizer.php:110
+msgctxt "customizer section title"
+msgid "Global"
+msgstr ""
+
+#: inc/customizer.php:117
+msgctxt "customizer section title"
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customizer.php:125 inc/customizer.php:172
+msgctxt "customizer section title"
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php:137
+msgctxt "customizer section title"
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer.php:142
+msgctxt "customizer section title"
+msgid "Content"
+msgstr ""
+
+#: inc/customizer.php:149
+msgctxt "customizer section title"
+msgid "Widgets"
+msgstr ""
+
+#: inc/customizer.php:160
+msgctxt "customizer section title"
+msgid "Social Networks"
+msgstr ""
+
+#: inc/customizer.php:161
+msgid ""
+"Enter your social network URLs. Leaving a URL empty will hide its "
+"respective icon."
+msgstr ""
+
+#: inc/customizer.php:177
+msgctxt "customizer section title"
+msgid "Footer style"
+msgstr ""
+
+#: inc/customizer.php:184
+msgctxt "customizer section title"
+msgid "Bottom bar"
+msgstr ""
+
+#: inc/customizer.php:196
+msgctxt "customizer section title"
+msgid "Titles"
+msgstr ""
+
+#: inc/customizer.php:201
+msgctxt "customizer section title"
+msgid "General"
+msgstr ""
+
+#: inc/customizer.php:208
+msgctxt "customizer section title"
+msgid "Posts"
+msgstr ""
+
+#: inc/customizer.php:216
+msgctxt "customizer section title"
+msgid "Video"
+msgstr ""
+
+#: inc/customizer.php:226
+msgctxt "customizer section title"
+msgid "Other"
+msgstr ""
+
+#: inc/customizer.php:227
+msgid "Other options affecting the whole site."
+msgstr ""
+
+#: inc/customizer.php:233
+msgctxt "customizer section title"
+msgid "Sample Content"
+msgstr ""
+
+#: inc/customizer.php:240
+msgctxt "customizer section title"
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/customizer/controls/slick-slider/slick-slider.php:73
+msgid "Show slider."
+msgstr ""
+
+#: inc/customizer/controls/slick-slider/slick-slider.php:80
+msgid "Auto slide."
+msgstr ""
+
+#: inc/customizer/controls/slick-slider/slick-slider.php:86
+msgid "Limit posts:"
+msgstr ""
+
+#: inc/customizer/controls/slick-slider/slick-slider.php:93
+msgid "Slide change effect:"
+msgstr ""
+
+#: inc/customizer/controls/slick-slider/slick-slider.php:95
+msgctxt "slick slider slide effect"
+msgid "Slide"
+msgstr ""
+
+#: inc/customizer/controls/slick-slider/slick-slider.php:96
+msgctxt "slick slider slide effect"
+msgid "Fade"
+msgstr ""
+
+#: inc/customizer/controls/slick-slider/slick-slider.php:103
+msgid "Pause between slides (in milliseconds):"
+msgstr ""
+
+#: inc/customizer/options/site-identity.php:23
+msgid "Limit logo size (for Retina display)"
+msgstr ""
+
+#: inc/customizer/options/site-identity.php:24
+msgid ""
+"This option will limit the image size to half its width. You will need to "
+"upload your image in 2x the dimension you want to display it in."
+msgstr ""
+
+#: inc/customizer/options/site-identity.php:38
+msgid "Show site title"
+msgstr ""
+
+#: inc/customizer/options/site-identity.php:49
+msgid "Show site tagline"
+msgstr ""
+
+#: inc/customizer/options/static-front-page.php:4
+msgid "Home Slider"
+msgstr ""
+
+#: inc/customizer/options/static-front-page.php:5
+msgid ""
+"Fine-tune the homepage slider. Applies to pages that have one of the "
+"\"Front page\" templates assigned."
+msgstr ""
+
+#: inc/customizer/options/theme-archive-options.php:11
+#: inc/customizer/options/theme-footer-style.php:10
+#: inc/customizer/options/theme-header-style.php:10
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer/options/theme-archive-options.php:23
+msgid "Show sidebar"
+msgstr ""
+
+#: inc/customizer/options/theme-archive-options.php:34
+msgid "Masonry effect"
+msgstr ""
+
+#: inc/customizer/options/theme-archive-options.php:51
+msgid "Automatically generated excerpt length (in words)"
+msgstr ""
+
+#: inc/customizer/options/theme-archive-options.php:64
+msgid "Pagination method"
+msgstr ""
+
+#: inc/customizer/options/theme-archive-options.php:66
+msgctxt "pagination method"
+msgid "Numbered links"
+msgstr ""
+
+#: inc/customizer/options/theme-archive-options.php:67
+msgctxt "pagination method"
+msgid "\"Previous - Next\" links"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-footer.php:9
+msgid "Main footer background color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-footer.php:19
+msgid "Main footer text color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-footer.php:29
+msgid "Main footer link color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-footer.php:39
+msgid "Bottom bar background color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-footer.php:49
+msgid "Bottom bar text color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-footer.php:59
+msgid "Bottom bar link color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-footer.php:69
+#: inc/customizer/options/theme-colors-sidebar.php:59
+msgid "Widget titles text color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-global.php:18
+msgid "Accent color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-global.php:28
+#: inc/customizer/options/theme-colors-hero.php:43
+#: inc/customizer/options/theme-colors-primary-menu-bar.php:19
+#: inc/customizer/options/theme-colors-sidebar.php:19
+msgid "Text color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-global.php:38
+#: inc/customizer/options/theme-colors-sidebar.php:49
+msgid "Border color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-global.php:48
+msgid "Button background color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-global.php:58
+msgid "Button text color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-global.php:68
+msgid "Button hover background color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-global.php:78
+msgid "Button hover text color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-global.php:88
+msgid "Button border color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:14
+msgid "Show hero"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:30
+msgid "Hero image"
+msgstr ""
+
+#. translators: %s is an image dimension pair in the form "width x height" without spaces, e.g. 800x600
+#: inc/customizer/options/theme-colors-hero.php:32
+#, php-format
+msgid "Recommended size of at least %s pixels."
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:52
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:53
+msgid ""
+"Select a color for your hero section. This will not be visible if you set "
+"a hero image, unless the image itself has transparent areas."
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:63
+msgid "Overlay color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:64
+msgid ""
+"Select an overlay color for your hero section. This will be visible "
+"<strong>on top</strong> of the image, so adjust the opacity to achieve the "
+"required result and reveal the hero image."
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:77
+msgid "Image repeat"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:89
+msgid "Image horizontal position"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:101
+msgid "Image vertical position"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:113
+msgid "Image attachment"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-hero.php:125
+msgid "Scale the image to cover its containing area."
+msgstr ""
+
+#: inc/customizer/options/theme-colors-primary-menu-bar.php:9
+#: inc/customizer/options/theme-colors-sidebar.php:9
+msgid "Background color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-primary-menu-bar.php:29
+msgid "Menu active & hover color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-primary-menu-bar.php:39
+msgid "Sub-menu background color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-primary-menu-bar.php:49
+msgid "Sub-menu text color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-primary-menu-bar.php:59
+msgid "Sub-menu active text color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-sidebar.php:29
+msgid "Link color"
+msgstr ""
+
+#: inc/customizer/options/theme-colors-sidebar.php:39
+msgid "Link hover color"
+msgstr ""
+
+#: inc/customizer/options/theme-footer-bottom-bar.php:10
+msgid "Show bottom bar"
+msgstr ""
+
+#: inc/customizer/options/theme-footer-bottom-bar.php:23
+msgid "Credits text"
+msgstr ""
+
+#: inc/customizer/options/theme-footer-bottom-bar.php:35
+msgid "Credits text (right)"
+msgstr ""
+
+#: inc/customizer/options/theme-footer-bottom-bar.php:47
+msgid "Show social icons"
+msgstr ""
+
+#: inc/customizer/options/theme-footer-style.php:22
+msgid "Full width footer"
+msgstr ""
+
+#: inc/customizer/options/theme-header-primary-menu.php:14
+msgid "Vertical padding (in pixels)"
+msgstr ""
+
+#: inc/customizer/options/theme-header-primary-menu.php:29
+msgid "Menu text size (in pixels)"
+msgstr ""
+
+#: inc/customizer/options/theme-header-primary-menu.php:46
+msgid "Sticky menu bar"
+msgstr ""
+
+#: inc/customizer/options/theme-header-style.php:22
+msgid "Logo / tagline alignment"
+msgstr ""
+
+#: inc/customizer/options/theme-header-style.php:34
+msgid "Full width header"
+msgstr ""
+
+#: inc/customizer/options/theme-other-google-fonts.php:9
+msgid "Serve Google Fonts locally."
+msgstr ""
+
+#: inc/customizer/options/theme-other-google-fonts.php:10
+msgid ""
+"When enabled, Google fonts will be served by your server instead from "
+"Google's CDN. You may need to enable this option for GDPR compliance."
+msgstr ""
+
+#: inc/customizer/options/theme-other-sample-content.php:15
+msgid "Sample content bundle"
+msgstr ""
+
+#. translators: %s is a URL
+#: inc/customizer/options/theme-other-sample-content.php:19
+#, php-format
+msgid ""
+"<a href=\"%s\" target=\"_blank\">Download the theme's sample content "
+"files</a> to get things moving."
+msgstr ""
+
+#: inc/customizer/options/theme-post-options.php:9
+#: inc/customizer/options/theme-video-options.php:9
+msgid "Show featured image"
+msgstr ""
+
+#: inc/customizer/options/theme-post-options.php:19
+msgid "Show date"
+msgstr ""
+
+#: inc/customizer/options/theme-post-options.php:29
+msgid "Show author"
+msgstr ""
+
+#: inc/customizer/options/theme-post-options.php:39
+msgid "Show comments"
+msgstr ""
+
+#: inc/customizer/options/theme-post-options.php:49
+msgid "Show categories"
+msgstr ""
+
+#: inc/customizer/options/theme-post-options.php:59
+msgid "Show tags"
+msgstr ""
+
+#: inc/customizer/options/theme-post-options.php:69
+msgid "Show author box"
+msgstr ""
+
+#: inc/customizer/options/theme-post-options.php:79
+msgid "Show related posts"
+msgstr ""
+
+#: inc/customizer/options/theme-post-options.php:90
+msgid "Enable lightbox for galleries"
+msgstr ""
+
+#: inc/customizer/options/theme-social.php:10
+msgid "Open social and sharing links in a new tab."
+msgstr ""
+
+#. translators: %s is a social network's name, e.g.: Facebook URL
+#: inc/customizer/options/theme-social.php:29
+#, php-format
+msgctxt "social network url"
+msgid "%s URL"
+msgstr ""
+
+#: inc/customizer/options/theme-social.php:41
+msgid "RSS Feed"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-general.php:4 inc/hero.php:74
+#: inc/hero.php:156
+msgid "From the blog"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-general.php:10
+msgid "Blog title"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-general.php:15 inc/hero.php:76
+msgid "Search results"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-general.php:21
+msgid "Search title"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-general.php:25 inc/hero.php:84
+msgid "Page not found"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-general.php:31
+msgid "404 (not found) title"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-post.php:3
+#: template-parts/related.php:4
+msgid "Related articles"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-post.php:9
+msgid "Related posts title"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-post.php:19
+msgid "Related posts subtitle"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-video.php:3
+#: template-parts/related-vidiho_pro_video.php:4
+msgid "Related videos"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-video.php:9
+msgid "Related videos title"
+msgstr ""
+
+#: inc/customizer/options/theme-titles-video.php:19
+msgid "Related videos subtitle"
+msgstr ""
+
+#: inc/customizer/options/theme-typography-content.php:14
+msgid "H1 font size"
+msgstr ""
+
+#: inc/customizer/options/theme-typography-content.php:29
+msgid "H2 font size"
+msgstr ""
+
+#: inc/customizer/options/theme-typography-content.php:44
+msgid "H3 font size"
+msgstr ""
+
+#: inc/customizer/options/theme-typography-content.php:59
+msgid "H4 font size"
+msgstr ""
+
+#: inc/customizer/options/theme-typography-content.php:74
+msgid "H5 font size"
+msgstr ""
+
+#: inc/customizer/options/theme-typography-content.php:89
+msgid "H6 font size"
+msgstr ""
+
+#: inc/customizer/options/theme-typography-content.php:104
+msgid "Body font size"
+msgstr ""
+
+#: inc/customizer/options/theme-typography-widgets.php:14
+msgid "Title font size"
+msgstr ""
+
+#: inc/customizer/options/theme-typography-widgets.php:29
+msgid "Text font size"
+msgstr ""
+
+#: inc/customizer/options/theme-video-options.php:19
+msgid "Floating video"
+msgstr ""
+
+#: inc/customizer/options/theme-video-options.php:20
+msgid ""
+"The video will appear resized on the side of the page so it's always "
+"visible when scrolling."
+msgstr ""
+
+#: inc/elementor.php:21
+msgid "Vidiho Pro Elements"
+msgstr ""
+
+#: inc/elementor.php:74
+msgid "Select an item"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:11 inc/elementor/latest-posts.php:26
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:34
+msgid ""
+"Displays a number of the latest (or random) posts, optionally from a "
+"specific category."
+msgstr ""
+
+#: inc/elementor/latest-posts.php:42 inc/elementor/latest-videos.php:42
+#: inc/widgets/contact.php:83 inc/widgets/contact.php:100
+#: inc/widgets/contact.php:120 inc/widgets/home-instagram.php:132
+#: inc/widgets/home-latest-posts.php:127
+#: inc/widgets/home-latest-videos.php:127 inc/widgets/home-newsletter.php:156
+#: inc/widgets/home-post-type-items.php:149
+#: inc/widgets/latest-post-type.php:89 inc/widgets/schedule.php:80
+#: inc/widgets/socials.php:45
+msgid "Title:"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:44 inc/elementor/latest-videos.php:44
+#: inc/elementor/post-type-items.php:44
+msgid "Enter your title"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:51 inc/elementor/latest-videos.php:51
+#: inc/elementor/post-type-items.php:51 inc/widgets/home-latest-posts.php:128
+#: inc/widgets/home-latest-videos.php:128 inc/widgets/home-newsletter.php:157
+#: inc/widgets/home-post-type-items.php:150
+msgid "Subtitle:"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:53 inc/elementor/latest-videos.php:53
+#: inc/elementor/post-type-items.php:53
+msgid "Enter your subtitle"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:60 inc/elementor/latest-videos.php:60
+#: inc/elementor/post-type-items.php:60
+msgid "Center Title"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:62 inc/elementor/latest-videos.php:62
+#: inc/elementor/post-type-items.php:62 inc/sanitization.php:78
+#: inc/sanitization.php:113 inc/sanitization.php:130 inc/sanitization.php:291
+msgid "Center"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:63 inc/elementor/latest-videos.php:63
+#: inc/elementor/post-type-items.php:63 inc/sanitization.php:77
+#: inc/sanitization.php:112 inc/sanitization.php:290
+msgid "Left"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:72 inc/elementor/latest-videos.php:72
+msgid "Display in random order"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:75 inc/elementor/latest-posts.php:87
+#: inc/elementor/latest-videos.php:75 inc/elementor/latest-videos.php:87
+#: inc/elementor/post-type-items.php:95
+msgid "Yes"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:76 inc/elementor/latest-posts.php:88
+#: inc/elementor/latest-videos.php:76 inc/elementor/latest-videos.php:88
+#: inc/elementor/post-type-items.php:96
+msgid "No"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:84 inc/elementor/latest-videos.php:84
+#: inc/elementor/post-type-items.php:92
+msgid "Display as a carousel"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:96 inc/elementor/latest-videos.php:96
+msgid "Category"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:106 inc/elementor/latest-videos.php:106
+#: inc/widgets/home-latest-posts.php:146
+#: inc/widgets/home-latest-videos.php:146
+#: inc/widgets/latest-post-type.php:103
+msgid "Number of posts to show:"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:122 inc/elementor/latest-videos.php:122
+#: inc/elementor/post-type-items.php:104
+msgid "Columns"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:126 inc/elementor/latest-videos.php:126
+#: inc/elementor/post-type-items.php:108
+msgid "One"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:127 inc/elementor/latest-videos.php:127
+#: inc/elementor/post-type-items.php:109
+msgid "Two"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:128 inc/elementor/latest-videos.php:128
+#: inc/elementor/post-type-items.php:110
+msgid "Three"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:129 inc/elementor/latest-videos.php:129
+#: inc/elementor/post-type-items.php:111
+msgid "Four"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:139
+msgid "Latest Posts Element Styles"
+msgstr ""
+
+#: inc/elementor/latest-posts.php:147 inc/elementor/latest-videos.php:147
+#: inc/elementor/post-type-items.php:138 inc/elementor/post-type.php:81
+msgid "Text Color"
+msgstr ""
+
+#: inc/elementor/latest-videos.php:11 inc/elementor/latest-videos.php:26
+msgid "Latest Videos"
+msgstr ""
+
+#: inc/elementor/latest-videos.php:34
+msgid ""
+"Displays a number of the latest (or random) videos, optionally from a "
+"specific category."
+msgstr ""
+
+#: inc/elementor/latest-videos.php:139
+msgid "Latest Videos Element Styles"
+msgstr ""
+
+#: inc/elementor/post-type-items.php:11 inc/elementor/post-type-items.php:26
+msgid "Post Type Items"
+msgstr ""
+
+#: inc/elementor/post-type-items.php:34
+msgid "Displays a hand-picked selection of posts from a selected post type."
+msgstr ""
+
+#: inc/elementor/post-type-items.php:42
+msgid "Element Title"
+msgstr ""
+
+#: inc/elementor/post-type-items.php:72 inc/elementor/post-type.php:42
+msgid "Post Type"
+msgstr ""
+
+#: inc/elementor/post-type-items.php:82
+msgid "Select Items"
+msgstr ""
+
+#: inc/elementor/post-type-items.php:119 inc/elementor/post-type.php:62
+msgid "View"
+msgstr ""
+
+#: inc/elementor/post-type-items.php:130
+msgid "Post Type Items Element Styles"
+msgstr ""
+
+#: inc/elementor/post-type.php:11 inc/elementor/post-type.php:26
+msgid "Vidiho Pro Post Type"
+msgstr ""
+
+#: inc/elementor/post-type.php:34
+msgid ""
+"Display any post type item from Vidiho Pro by first selecting the post "
+"type and then the item itself."
+msgstr ""
+
+#: inc/elementor/post-type.php:52
+msgid "Post"
+msgstr ""
+
+#: inc/elementor/post-type.php:73
+msgid "Post Type Element Styles"
+msgstr ""
+
+#: inc/helpers.php:6
+msgid "Facebook"
+msgstr ""
+
+#: inc/helpers.php:11
+msgid "Twitter"
+msgstr ""
+
+#: inc/helpers.php:16
+msgid "Instagram"
+msgstr ""
+
+#: inc/helpers.php:21
+msgid "Snapchat"
+msgstr ""
+
+#: inc/helpers.php:26
+msgid "Bloglovin"
+msgstr ""
+
+#: inc/helpers.php:31
+msgid "Pinterest"
+msgstr ""
+
+#: inc/helpers.php:36
+msgid "YouTube"
+msgstr ""
+
+#: inc/helpers.php:41
+msgid "Vimeo"
+msgstr ""
+
+#: inc/helpers.php:46
+msgid "Google Plus"
+msgstr ""
+
+#: inc/helpers.php:51
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/helpers.php:56
+msgid "Tumblr"
+msgstr ""
+
+#: inc/helpers.php:61
+msgid "Flickr"
+msgstr ""
+
+#: inc/helpers.php:66
+msgid "Dribbble"
+msgstr ""
+
+#: inc/helpers.php:71
+msgid "WordPress"
+msgstr ""
+
+#: inc/helpers.php:76
+msgid "500px"
+msgstr ""
+
+#: inc/helpers.php:81
+msgid "Soundcloud"
+msgstr ""
+
+#: inc/helpers.php:86
+msgid "Spotify"
+msgstr ""
+
+#: inc/helpers.php:91
+msgid "Vine"
+msgstr ""
+
+#: inc/helpers.php:96
+msgid "Trip Advisor"
+msgstr ""
+
+#: inc/helpers.php:104
+msgid "Pages:"
+msgstr ""
+
+#. translators: %d is the number of search results.
+#: inc/hero.php:81
+#, php-format
+msgid "%d result found."
+msgid_plural "%d results found."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/onboarding.php:26
+msgid "Demo Import"
+msgstr ""
+
+#: inc/onboarding.php:58
+msgid "Vidiho Pro is a very versatile video theme for WordPress."
+msgstr ""
+
+#: inc/onboarding.php:62
+msgid "Vidiho Pro Essentials"
+msgstr ""
+
+#: inc/onboarding.php:63
+msgid "Vidiho Pro's core functions."
+msgstr ""
+
+#: inc/onboarding.php:72 inc/onboarding/onboarding-page.php:335
+msgid "One Click Demo Import"
+msgstr ""
+
+#: inc/onboarding.php:73
+msgid "Import your demo content, widgets and theme settings with one click."
+msgstr ""
+
+#: inc/onboarding.php:76
+msgid "Elementor"
+msgstr ""
+
+#: inc/onboarding.php:77
+msgid "Elementor is a front-end drag & drop page builder for WordPress. "
+msgstr ""
+
+#. translators: %1$s is the theme name. %2$s URL to onboarding page.
+#: inc/onboarding/onboarding-page.php:142
+#, php-format
+msgid ""
+"Welcome to %1$s. Check out the <a href=\"%2$s\">onboarding page</a> to get "
+"things started."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:200
+msgid "Activating"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:201
+msgid "Activate"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:202
+msgid "Installing..."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:288
+msgid "The following plugins are required. Please install and activate them."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:291
+#: inc/onboarding/onboarding-page.php:316
+msgid ""
+"You do not have sufficient permissions to install plugins, please contact "
+"your administrator."
+msgstr ""
+
+#. translators: %s is the theme's name.
+#: inc/onboarding/onboarding-page.php:312
+#, php-format
+msgid ""
+"The following plugins are not required but they will provide additional "
+"functionality to %s."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:337
+msgid "Import our sample content."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:342
+msgid "Please note:"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:343
+msgid ""
+"You need to install and activate One Click Demo Import before proceeding."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:344
+msgid "Click here to do it now."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:350
+msgid "Good to go!"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:351
+msgid ""
+"Now you can import the sample content and have your theme set up like the "
+"demo using the One Click Demo Import Plugin."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:352
+msgid "Get Started"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:370
+msgid "Here are a few useful links to get you started."
+msgstr ""
+
+#. translators: %s is the plugin name.
+#: inc/onboarding/onboarding-page.php:423
+#: inc/onboarding/onboarding-page.php:452
+#, php-format
+msgid "The %s plugin was not found, click to install and activate."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:426
+#: inc/onboarding/onboarding-page.php:455
+msgid "Install &amp; activate "
+msgstr ""
+
+#. translators: %s is the plugin name.
+#: inc/onboarding/onboarding-page.php:481
+#, php-format
+msgid "The %s plugin is installed but not active, click to activate."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:484
+msgid "Activate "
+msgstr ""
+
+#. translators: %s is the plugin name.
+#: inc/onboarding/onboarding-page.php:502
+#, php-format
+msgid "%s is installed and activated."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:560
+msgid ""
+"You do not have sufficient permissions to install plugins on this site."
+msgstr ""
+
+#. translators: %s is a URL.
+#: inc/onboarding/onboarding-page.php:574
+#, php-format
+msgid "Installing Plugin from URL: %s"
+msgstr ""
+
+#. translators: %s is the theme name.
+#: inc/onboarding/onboarding-page.php:589
+#: inc/onboarding/onboarding-page.php:592
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:594
+msgid "Welcome to :theme_name:! - Version :theme_version:"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:607
+msgid "Required Plugins"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:608
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:609
+msgid "Sample Content"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:610
+msgid "Support"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:645
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:646
+msgid ""
+"If you don't want to import our demo sample content, just visit this page "
+"and learn how to set things up individually."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:650
+msgid "Knowledge Base"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:651
+msgid ""
+"Browse our library of step by step how-to articles, tutorials, and guides "
+"to get quick answers."
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:655
+msgid "Request Support"
+msgstr ""
+
+#: inc/onboarding/onboarding-page.php:656
+msgid ""
+"Got stuck? No worries, just visit our support page, submit your ticket and "
+"we will be there for you within 24 hours."
+msgstr ""
+
+#: inc/sanitization.php:79 inc/sanitization.php:114
+msgid "Right"
+msgstr ""
+
+#: inc/sanitization.php:94
+msgid "No repeat"
+msgstr ""
+
+#: inc/sanitization.php:95
+msgid "Tile"
+msgstr ""
+
+#: inc/sanitization.php:96
+msgid "Tile Horizontally"
+msgstr ""
+
+#: inc/sanitization.php:97
+msgid "Tile Vertically"
+msgstr ""
+
+#: inc/sanitization.php:129
+msgid "Top"
+msgstr ""
+
+#: inc/sanitization.php:131
+msgid "Bottom"
+msgstr ""
+
+#: inc/sanitization.php:146
+msgid "Scroll"
+msgstr ""
+
+#: inc/sanitization.php:147
+msgid "Fixed"
+msgstr ""
+
+#. translators: %d is a number.
+#: inc/sanitization.php:238 inc/sanitization.php:240 inc/sanitization.php:242
+#: inc/sanitization.php:244
+#, php-format
+msgid "%d column"
+msgid_plural "%d columns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/sanitization.php:263
+msgid "Left logo - Right menu"
+msgstr ""
+
+#: inc/sanitization.php:264
+msgid "Centered logo - Split menu"
+msgstr ""
+
+#: inc/sanitization.php:265
+msgid "Top logo - Bottom menu"
+msgstr ""
+
+#: inc/sanitization.php:311
+msgid "4 Columns"
+msgstr ""
+
+#: inc/sanitization.php:312
+msgid "3 Columns"
+msgstr ""
+
+#: inc/sanitization.php:313
+msgid "2 Columns"
+msgstr ""
+
+#: inc/sanitization.php:314
+msgid "1 Column"
+msgstr ""
+
+#: inc/sanitization.php:315
+msgid "1/4 - 3/4 Columns"
+msgstr ""
+
+#: inc/sanitization.php:316
+msgid "3/4 - 1/4 Columns"
+msgstr ""
+
+#: inc/sanitization.php:317
+msgid "1/4 - 1/4 - 1/2 Columns"
+msgstr ""
+
+#: inc/sanitization.php:318
+msgid "1/2 - 1/4 - 1/4 Columns"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by IBM Plex Sans, translate this to 'off'. Do not translate into your own language.
+#: inc/scripts-styles.php:15
+msgctxt "IBM Plex Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by IBM Plex Serif, translate this to 'off'. Do not translate into your own language.
+#: inc/scripts-styles.php:20
+msgctxt "IBM Plex Serif font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/scripts-styles.php:74
+msgid "Select file"
+msgstr ""
+
+#: inc/scripts-styles.php:75
+msgid "Select files"
+msgstr ""
+
+#: inc/scripts-styles.php:76
+msgid "Use this file"
+msgstr ""
+
+#: inc/scripts-styles.php:77
+msgid "Use these files"
+msgstr ""
+
+#: inc/scripts-styles.php:78
+msgid "Update gallery"
+msgstr ""
+
+#: inc/scripts-styles.php:79
+msgid "Loading..."
+msgstr ""
+
+#: inc/scripts-styles.php:80
+msgid "Gallery preview not available."
+msgstr ""
+
+#: inc/scripts-styles.php:81 inc/widgets/home-newsletter.php:168
+msgid "Remove image"
+msgstr ""
+
+#: inc/scripts-styles.php:82
+msgid "Remove from gallery"
+msgstr ""
+
+#: inc/scripts-styles.php:108
+msgid "No posts found."
+msgstr ""
+
+#: inc/sidebars-widgets.php:11
+msgid "Blog"
+msgstr ""
+
+#: inc/sidebars-widgets.php:13
+msgid "Widgets added here will appear on the blog section."
+msgstr ""
+
+#: inc/sidebars-widgets.php:21
+msgid "Page"
+msgstr ""
+
+#: inc/sidebars-widgets.php:23
+msgid "Widgets added here will appear on the static pages."
+msgstr ""
+
+#: inc/sidebars-widgets.php:31
+msgid "Videos"
+msgstr ""
+
+#: inc/sidebars-widgets.php:33
+msgid "Widgets added here will appear on video pages."
+msgstr ""
+
+#: inc/sidebars-widgets.php:41
+msgid "Front Page"
+msgstr ""
+
+#: inc/sidebars-widgets.php:43
+msgid ""
+"These widgets appear on pages that have the \"Front page\" template "
+"assigned."
+msgstr ""
+
+#: inc/sidebars-widgets.php:51
+msgid "Elementor 1"
+msgstr ""
+
+#: inc/sidebars-widgets.php:53 inc/sidebars-widgets.php:63
+msgid "You can use this sidebar for Elementor-based layouts."
+msgstr ""
+
+#: inc/sidebars-widgets.php:61
+msgid "Elementor 2"
+msgstr ""
+
+#: inc/sidebars-widgets.php:71
+msgid "Footer - 1st column"
+msgstr ""
+
+#: inc/sidebars-widgets.php:73
+msgid "Widgets added here will appear on the first footer column."
+msgstr ""
+
+#: inc/sidebars-widgets.php:80
+msgid "Footer - 2nd column"
+msgstr ""
+
+#: inc/sidebars-widgets.php:82
+msgid "Widgets added here will appear on the second footer column."
+msgstr ""
+
+#: inc/sidebars-widgets.php:89
+msgid "Footer - 3rd column"
+msgstr ""
+
+#: inc/sidebars-widgets.php:91
+msgid "Widgets added here will appear on the third footer column."
+msgstr ""
+
+#: inc/sidebars-widgets.php:98
+msgid "Footer - 4th column"
+msgstr ""
+
+#: inc/sidebars-widgets.php:100
+msgid "Widgets added here will appear on the fourth footer column."
+msgstr ""
+
+#: inc/template-tags.php:85 searchform.php:3
+msgid "Search for:"
+msgstr ""
+
+#: inc/template-tags.php:86
+msgid "Type and hit enter to search"
+msgstr ""
+
+#: inc/template-tags.php:208
+#, php-format
+msgid "Powered by <a href=\"%s\">WordPress</a>"
+msgstr ""
+
+#: inc/template-tags.php:213
+#, php-format
+msgid "A theme by <a href=\"%s\">CSSIgniter</a>"
+msgstr ""
+
+#: inc/template-tags.php:217
+#, php-format
+msgid "<a href=\"%1$s\">%2$s</a>"
+msgstr ""
+
+#: inc/template-tags.php:255 inc/template-tags.php:291
+#: inc/template-tags.php:321
+msgid "Menu"
+msgstr ""
+
+#: inc/template-tags.php:507
+msgid "Featured"
+msgstr ""
+
+#. translators: %s is the author's name.
+#: inc/template-tags.php:552 template-parts/item-media-post.php:35
+#: template-parts/item-post.php:35 template-parts/item-tall-post.php:35
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:572 template-parts/item-media-vidiho_pro_video.php:43
+#: template-parts/item-media-post.php:47 template-parts/item-post.php:47
+#: template-parts/item-tall-post.php:47
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:693
+msgctxt "previous post"
+msgid "Previous"
+msgstr ""
+
+#: inc/template-tags.php:694
+msgctxt "next post"
+msgid "Next"
+msgstr ""
+
+#: inc/template-tags.php:695
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/widgets/contact.php:13
+msgid "Display a map and contact information."
+msgstr ""
+
+#: inc/widgets/contact.php:15
+msgid "Theme - Contact"
+msgstr ""
+
+#: inc/widgets/contact.php:84
+msgid "Map code (accepts HTML):"
+msgstr ""
+
+#: inc/widgets/contact.php:85
+msgid "Contact title:"
+msgstr ""
+
+#: inc/widgets/contact.php:87 inc/widgets/home-post-type-items.php:181
+#: inc/widgets/schedule.php:83
+msgid ""
+"Add as many items as you want by pressing the \"Add Item\" button. Remove "
+"any item by selecting \"Remove me\"."
+msgstr ""
+
+#: inc/widgets/contact.php:96 inc/widgets/contact.php:116
+#, php-format
+msgid ""
+"Icon (e.g. <code>fas fa-check</code> <a href=\"%s\" target=\"_blank"
+"\">Reference</a>):"
+msgstr ""
+
+#: inc/widgets/contact.php:104 inc/widgets/contact.php:124
+#: inc/widgets/home-post-type-items.php:202
+#: inc/widgets/home-post-type-items.php:225 inc/widgets/schedule.php:100
+#: inc/widgets/schedule.php:120
+msgid "Remove me"
+msgstr ""
+
+#: inc/widgets/contact.php:127 inc/widgets/home-post-type-items.php:228
+#: inc/widgets/schedule.php:123
+msgid "Add Item"
+msgstr ""
+
+#: inc/widgets/home-instagram.php:18
+msgid ""
+"Homepage widget. Displays your latest Instagram photos. Requires the "
+"plugin \"WP Instagram Widget\" to be active."
+msgstr ""
+
+#: inc/widgets/home-instagram.php:20
+msgid "Theme (home) - Instagram"
+msgstr ""
+
+#: inc/widgets/home-instagram.php:133
+msgid "Username:"
+msgstr ""
+
+#: inc/widgets/home-instagram.php:134
+msgid "Number of photos:"
+msgstr ""
+
+#: inc/widgets/home-instagram.php:137
+msgid "Open links in:"
+msgstr ""
+
+#: inc/widgets/home-instagram.php:140
+msgid "Current window"
+msgstr ""
+
+#: inc/widgets/home-instagram.php:141
+msgid "New window"
+msgstr ""
+
+#: inc/widgets/home-instagram.php:149
+msgid "Link text:"
+msgstr ""
+
+#: inc/widgets/home-instagram.php:151 inc/widgets/home-latest-posts.php:165
+#: inc/widgets/home-latest-videos.php:165 inc/widgets/home-newsletter.php:181
+#: inc/widgets/home-post-type-items.php:178
+msgid "Show the title in the center."
+msgstr ""
+
+#: inc/widgets/home-latest-posts.php:19
+msgid ""
+"Homepage widget. Displays a number of the latest (or random) posts, "
+"optionally from a specific category."
+msgstr ""
+
+#: inc/widgets/home-latest-posts.php:21
+msgid "Theme (home) - Latest Posts"
+msgstr ""
+
+#: inc/widgets/home-latest-posts.php:130
+msgid "Category to display the latest posts from (optional):"
+msgstr ""
+
+#: inc/widgets/home-latest-posts.php:145
+#: inc/widgets/home-latest-videos.php:145
+#: inc/widgets/latest-post-type.php:102
+msgid "Show random posts."
+msgstr ""
+
+#: inc/widgets/home-latest-posts.php:149
+#: inc/widgets/home-latest-videos.php:149
+#: inc/widgets/home-post-type-items.php:162
+msgid "Output Columns:"
+msgstr ""
+
+#. translators: %d is a number of columns.
+#: inc/widgets/home-latest-posts.php:158
+#: inc/widgets/home-latest-videos.php:158
+#: inc/widgets/home-post-type-items.php:171
+#, php-format
+msgid "%d Column"
+msgid_plural "%d Columns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/widgets/home-latest-posts.php:166
+#: inc/widgets/home-latest-videos.php:166
+#: inc/widgets/home-post-type-items.php:179
+msgid "Show items as a carousel."
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:19
+msgid ""
+"Homepage widget. Displays a number of the latest (or random) videos, "
+"optionally from a specific category."
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:21
+msgid "Theme (home) - Latest Videos"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:130
+msgid "Category to display the latest videos from (optional):"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:169 inc/widgets/home-newsletter.php:187
+msgid "Customize"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:171
+msgid "Overlay Color:"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:172 inc/widgets/home-newsletter.php:189
+msgid "Background Color:"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:174 inc/widgets/home-newsletter.php:191
+msgid "Background Image:"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:174 inc/widgets/home-newsletter.php:191
+msgid "Select"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:176 inc/widgets/home-newsletter.php:193
+msgid "Background Repeat:"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:178 inc/widgets/home-newsletter.php:195
+msgid "Repeat"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:179 inc/widgets/home-newsletter.php:196
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:180 inc/widgets/home-newsletter.php:197
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:181 inc/widgets/home-newsletter.php:198
+msgid "No Repeat"
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:184 inc/widgets/home-newsletter.php:201
+msgid ""
+"Stretch background image to cover the entire width (requires a background "
+"image)."
+msgstr ""
+
+#: inc/widgets/home-latest-videos.php:186
+msgid "Parallax effect (requires a background image)."
+msgstr ""
+
+#: inc/widgets/home-newsletter.php:19
+msgid "Homepage widget. Displays a newsletter subscription form."
+msgstr ""
+
+#: inc/widgets/home-newsletter.php:21
+msgid "Theme (home) - Newsletter"
+msgstr ""
+
+#: inc/widgets/home-newsletter.php:99 inc/widgets/home-newsletter.php:100
+msgid "Your email"
+msgstr ""
+
+#. translators: If your language is RTL, change fa-arrow-alt-circle-right to fa-arrow-alt-circle-left
+#: inc/widgets/home-newsletter.php:105
+msgid "Sign Up <i class=\"far fa-arrow-alt-circle-right\"></i>"
+msgstr ""
+
+#: inc/widgets/home-newsletter.php:160
+msgid "Image:"
+msgstr ""
+
+#: inc/widgets/home-newsletter.php:174
+msgid "Select Image"
+msgstr ""
+
+#: inc/widgets/home-newsletter.php:179
+msgid "Text:"
+msgstr ""
+
+#: inc/widgets/home-newsletter.php:183
+msgid "Form email field name attribute:"
+msgstr ""
+
+#: inc/widgets/home-newsletter.php:184
+msgid "Form Action URL:"
+msgstr ""
+
+#: inc/widgets/home-post-type-items.php:18
+msgid ""
+"Homepage widget. Displays a hand-picked selection of posts from a selected "
+"post type."
+msgstr ""
+
+#: inc/widgets/home-post-type-items.php:20
+msgid "Theme (home) - Post Type Items"
+msgstr ""
+
+#: inc/widgets/home-post-type-items.php:153
+msgid "Post type:"
+msgstr ""
+
+#: inc/widgets/home-post-type-items.php:190
+#: inc/widgets/home-post-type-items.php:214
+msgid "Item:"
+msgstr ""
+
+#: inc/widgets/latest-post-type.php:13
+msgid ""
+"Displays a number of the latest (or random) posts from a specific post "
+"type."
+msgstr ""
+
+#: inc/widgets/latest-post-type.php:15
+msgid "Theme - Latest Post Type"
+msgstr ""
+
+#: inc/widgets/latest-post-type.php:92
+msgid "Select a post type to display the latest post from:"
+msgstr ""
+
+#: inc/widgets/schedule.php:12
+msgid "Display a schedule."
+msgstr ""
+
+#: inc/widgets/schedule.php:14
+msgid "Theme - Schedule"
+msgstr ""
+
+#: inc/widgets/schedule.php:81
+msgid "Text (accepts HTML):"
+msgstr ""
+
+#: inc/widgets/schedule.php:92 inc/widgets/schedule.php:112
+msgid "Day:"
+msgstr ""
+
+#: inc/widgets/schedule.php:96 inc/widgets/schedule.php:116
+msgid "Time:"
+msgstr ""
+
+#: inc/widgets/socials.php:10
+msgid "Displays the site's social icons."
+msgstr ""
+
+#: inc/widgets/socials.php:12
+msgid "Theme - Social Icons"
+msgstr ""
+
+#: inc/widgets/socials.php:46
+msgid ""
+"This widget displays your site's social icons. In order to set them up, "
+"you need to visit <strong>Appearance > Customize > Social Networks</"
+"strong> and provide the appropriate URLs where desired."
+msgstr ""
+
+#: searchform.php:4
+msgctxt "search box placeholder"
+msgid "Search"
+msgstr ""
+
+#: searchform.php:5
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: template-parts/article-none.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/article-none.php:9
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/article-none.php:13
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/article-none.php:18
+msgid ""
+"It seems we can't find what you're looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/hero-vidiho_pro_video.php:67
+#: template-parts/item-vidiho_pro_video.php:21
+#: template-parts/slider-front-page-slide-vidiho_pro_video.php:43
+msgid "Play video"
+msgstr ""
+
+#. translators: If your language is RTL, change fa-arrow-alt-circle-right to fa-arrow-alt-circle-left
+#: template-parts/item-media-vidiho_pro_video.php:61
+#: template-parts/item-media-post.php:65 template-parts/item-media.php:24
+msgid "Read More <i class=\"far fa-arrow-alt-circle-right\"></i>"
+msgstr ""
+
+#: templates/listing-vidiho_pro_video.php:34
+msgctxt "all categories"
+msgid "All"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Vidiho Pro"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.cssigniter.com/themes/vidiho-pro/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Video theme for WordPress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "CSSIgniter"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.cssigniter.com/"
+msgstr ""

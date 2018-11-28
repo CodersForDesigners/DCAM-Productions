@@ -1,0 +1,83 @@
+// Grid
+// Variables used by Bootstrap Grid (v4)
+// =========================================
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+) !default;
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 940px,
+	xl: 1170px
+) !default;
+
+$grid-columns: 12 !default;
+$grid-gutter-width-base: 30px !default;
+$grid-gutter-widths: (
+	xs: $grid-gutter-width-base,
+	sm: $grid-gutter-width-base,
+	md: $grid-gutter-width-base,
+	lg: $grid-gutter-width-base,
+	xl: $grid-gutter-width-base
+) !default;
+
+// WordPress Galleries gutter widths
+$grid-gutter-widths-galleries: (
+	xs: $grid-gutter-width-base / 3,
+	sm: $grid-gutter-width-base / 3,
+	md: $grid-gutter-width-base / 3,
+	lg: $grid-gutter-width-base / 3,
+	xl: $grid-gutter-width-base / 3
+) !default;
+
+// Base Generic
+// =========================================
+$font-size-base: 18px !default;
+$line-height-base: 1.666666667 !default;
+
+// Hero
+// =========================================
+$hero-home-height-lg: 100vh !default;
+$hero-home-height-md: 650px !default;
+$hero-home-height-sm: 500px !default;
+
+// Sections & Spacing
+// =========================================
+$section-padding-lg: 110px !default;
+$section-padding-md: 65px !default;
+$section-padding-sm: 50px !default;
+
+$widget-margin-lg: 60px !default;
+$widget-margin-md: 50px !default;
+$widget-margin-sm: 40px !default;
+
+// Colors
+// =========================================
+$white: #fff !default;
+$black: #000 !default;
+$grey: #f7f7f7 !default;
+
+$body-bg: $white !default;
+$accent-color: #1a93b1 !default;
+$accent-secondary-light: #214961 !default;
+$accent-secondary: #132f3f !default;
+$text-color: #0a1920 !default;
+$text-color-secondary: #606060 !default;
+$text-on-accent: $white;
+$border-color: #e7e7e7 !default;
+
+$button-bg-color: transparent !default;
+$button-text-color: $text-color-secondary !default;
+$button-border-color: $accent-color !default;
+
+// Fonts
+// =========================================
+$primary-font: "IBM Plex Sans", sans-serif !default;
+$secondary-font: "IBM Plex Serif", serif !default;
+$font-awesome: "Font Awesome 5 Free" !default;
+$font-awesome-brands: "Font Awesome 5 Brands" !default;

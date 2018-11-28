@@ -1,0 +1,865 @@
+/* -----------------------------------------
+	05. Modules
+----------------------------------------- */
+
+/* General Layout
+=================================== */
+.main {
+	padding: $section-padding-lg 0;
+
+	@include media-breakpoint-down(md) {
+		padding: $section-padding-md 0;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: $section-padding-sm 0;
+	}
+}
+
+.main-extra-pad {
+	padding-top: $section-padding-lg + 80px;
+
+	@include media-breakpoint-down(md) {
+		padding-top: $section-padding-md + 60px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding-top: $section-padding-sm;
+	}
+}
+
+.sidebar {
+	@include media-breakpoint-down(md) {
+		margin-top: 80px;
+	}
+}
+
+.container {
+	@include media-breakpoint-down(xs) {
+		width: 100%;
+	}
+}
+
+/* Sections
+=================================== */
+.widget-section {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-bottom: $section-padding-lg;
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: $section-padding-md;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: $section-padding-sm;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.widget-section-parallax {
+	background-attachment: fixed;
+}
+
+.section-heading {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 45px;
+	text-align: center;
+	z-index: 1;
+}
+
+.section-heading-left {
+	text-align: left;
+}
+
+.section-heading-content {
+	flex: auto;
+}
+
+.section-title,
+.section-heading-content h5 {
+	margin: 0 !important;
+	font-size: 32px;
+
+	@include media-breakpoint-down(sm) {
+		font-size: 28px;
+	}
+}
+
+.section-subtitle {
+	margin: 0;
+	text-transform: uppercase;
+	color: $text-color-secondary;
+	font-size: 13px;
+	letter-spacing: .22em;
+
+	a {
+		color: $text-color-secondary;
+	}
+}
+
+.section-related {
+	margin-top: $section-padding-lg;
+
+	@include media-breakpoint-down(md) {
+		margin-top: $section-padding-md;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-top: $section-padding-sm;
+	}
+}
+
+/* Entry Styles
+=================================== */
+.entry {
+	margin: 0 0 80px;
+
+	&:only-child {
+		margin-bottom: 0;
+	}
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 60px;
+	}
+}
+
+.entry-header {
+	margin-bottom: 50px;
+}
+
+.entry-title {
+	a {
+		color: $text-color;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+}
+
+.entry-meta {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: $text-color-secondary;
+	font-family: $secondary-font;
+
+	a {
+		color: $text-color;
+		font-family: $primary-font;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+
+	span {
+		&::after {
+			content: "\2022";
+			color: $text-color;
+			margin: 0 4px;
+			font-size: 18px;
+			line-height: 0;
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+.entry-thumb {
+	margin-bottom: 50px;
+
+	&.alignnone,
+	&.alignleft,
+	&.alignright,
+	&.aligncenter {
+		margin-top: 0;
+	}
+}
+
+.entry-content {
+	@include clearfix;
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 65px 0 40px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		@include media-breakpoint-down(md) {
+			margin: 40px 0 30px;
+		}
+	}
+
+	.fluid-width-video-wrapper,
+	audio,
+	video,
+	blockquote {
+		margin: 65px 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include media-breakpoint-down(md) {
+			margin: 40px 0;
+		}
+	}
+
+	blockquote {
+		font-size: 22px;
+		position: relative;
+		padding-left: 60px;
+		border: 0;
+
+		&::before {
+			content: "\00201C";
+			font-size: 5em;
+			line-height: 0;
+			position: absolute;
+			left: 0;
+			top: 40px;
+			opacity: .35;
+		}
+	}
+
+	.alignleft,
+	.alignright {
+		@include media-breakpoint-down(sm) {
+			float: none;
+			display: block;
+			margin: 20px auto;
+		}
+	}
+}
+
+.entry-tags {
+	margin-top: 30px;
+}
+
+.entry-content-intro {
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 40px;
+}
+
+.entry-content-column-split {
+	@include media-breakpoint-up(md) {
+		columns: 2;
+	}
+}
+
+.entry-more-btn {
+	margin-top: 25px;
+}
+
+.entry-author-box {
+	display: flex;
+	padding: 35px;
+	border: 2px solid $border-color;
+	margin-bottom: 65px;
+
+	@include media-breakpoint-down(sm) {
+		padding: 15px;
+	}
+}
+
+.entry-author-thumbnail {
+	width: 68px;
+	flex: none;
+	margin-right: 30px;
+
+	@include media-breakpoint-down(md) {
+		margin-right: 15px;
+	}
+}
+
+.entry-author-title {
+	margin-bottom: 15px;
+	font-size: 16px;
+	font-family: $secondary-font;
+}
+
+.entry-author-subtitle {
+	margin: -15px 0 15px;
+}
+
+.entry-author-desc {
+	font-size: 14px;
+
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* Items & Item Listings
+=================================== */
+.row-items {
+	margin-bottom: -30px;
+
+	&.no-gutters,
+	&.row-slider {
+		margin-bottom: 0;
+	}
+}
+
+.item {
+	margin-bottom: 30px;
+
+	.no-gutters &,
+	.row-slider & {
+		margin-bottom: 0;
+	}
+}
+
+.item-vertical {
+	background-repeat: no-repeat;
+	background-size: 120%;
+	background-position: top center;
+	height: 0;
+	position: relative;
+	padding-bottom: 172%;
+	transition: transform .18s ease, background-size .18s ease;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		box-shadow: inset 0 0 30px rgba(0, 0, 0, .4);
+	}
+
+	.item-content {
+		width: 100%;
+	}
+
+	[class^="col-sm-6"] & {
+		padding-bottom: 125%;
+		background-size: cover;
+	}
+
+	&:hover {
+		@include media-breakpoint-up(lg) {
+			background-size: 100%;
+			z-index: 10;
+			box-shadow: 0 0 15px rgba($black, .4);
+
+			.video-trigger-icon {
+				top: 50%;
+				opacity: 1;
+			}
+
+			[class^="col-xl-3"] & {
+				transform: scale(1.15);
+			}
+
+			[class^="col-lg-4"] & {
+				transform: scale(1.1);
+			}
+
+			.item-content {
+				[class^="col-xl-3"] & {
+					transform: scale(.751879699);
+				}
+
+				[class^="col-lg-4"] & {
+					transform: scale(.854700855);
+				}
+			}
+		}
+	}
+
+	.video-trigger-icon {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: scale(.869565217) translate(0, -50%);
+		margin-left: -49px;
+		opacity: 0;
+	}
+}
+
+.item-vertical-link {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 30%;
+		background-image: linear-gradient(to top, $accent-secondary, transparent);
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+.item-content {
+	transition: transform .18s ease;
+	padding: 35px;
+	text-align: center;
+	color: $white;
+	line-height: normal;
+	position: relative;
+	z-index: 1;
+
+	@include media-breakpoint-down(xs) {
+		padding: 10px;
+	}
+}
+
+.item-categories {
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 0 0 3px;
+}
+
+.item-title {
+	font-family: $secondary-font;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: -.025em;
+
+	@include media-breakpoint-down(xs) {
+		font-size: 14px;
+	}
+}
+
+.item-date {
+	font-family: $secondary-font;
+	font-size: 12px;
+	line-height: normal;
+
+	&::before {
+		content: "\2022";
+		display: block;
+		font-size: 1.2em;
+		font-weight: bold;
+		text-align: center;
+		margin: 2px 0 -4px;
+	}
+}
+
+.item-media {
+	display: flex;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid $border-color;
+
+	&:last-child {
+		&:not(:only-child) {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border: 0;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		&:not(.item-media-sm) {
+			display: block;
+		}
+	}
+}
+
+.item-media-top {
+	border: 0;
+	padding-bottom: 0;
+	display: block;
+
+	.item-media-thumb {
+		max-width: 100%;
+	}
+}
+
+.item-media-sm {
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+}
+
+.item-media-thumb {
+	flex: none;
+	margin-right: 30px;
+	max-width: 345px;
+
+	.item-media-sm & {
+		margin-right: 15px;
+	}
+
+	.item-media-top & {
+		margin: 0 0 25px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin: 0 0 25px;
+	}
+}
+
+.item-media-content {
+	@include clearfix;
+}
+
+.item-media-categories {
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+
+	a {
+		color: $text-color-secondary;
+		border-bottom: 2px solid transparent;
+
+		&:hover {
+			border-bottom-color: $accent-color;
+		}
+	}
+}
+
+.item-media-title {
+	font-family: $secondary-font;
+	font-size: 18px;
+	letter-spacing: -.025em;
+	font-weight: 600;
+	margin-bottom: 10px;
+	line-height: 1.3333;
+
+	a {
+		color: $text-color;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+
+	.item-media-sm & {
+		font-size: 14px;
+		line-height: normal;
+		margin-bottom: 5px;
+	}
+}
+
+.item-media-meta {
+	font-size: 12px;
+	color: $text-color-secondary;
+	margin-bottom: 10px;
+
+	a {
+		color: $text-color;
+	}
+
+	span {
+		&::after {
+			content: "\2022";
+			margin: 0 4px;
+			line-height: 0;
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+.item-media-excerpt {
+	font-size: 14px;
+	line-height: 1.5;
+	color: $text-color-secondary;
+	font-family: $secondary-font;
+
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.item-media-top & {
+		margin-top: 15px;
+	}
+}
+
+.btn-entry-more {
+	margin-top: 10px;
+	float: right;
+}
+
+
+// Isotope filtering
+.item-filters {
+	margin-bottom: 30px;
+
+	@include media-breakpoint-down(md) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.item-filter {
+	@include button;
+	@include button-sm;
+	margin: 0 5px 5px;
+
+	@include media-breakpoint-down(md) {
+		margin: 1px;
+		flex: 1 0 49%;
+	}
+}
+
+.filter-active {
+	color: $text-on-accent;
+	background-color: $button-border-color;
+
+	&:hover {
+		color: $text-on-accent;
+	}
+}
+
+/* Pagination
+=================================== */
+.navigation {
+	margin: 70px 0 0;
+	text-align: center;
+
+	a,
+	.page-numbers {
+		display: inline-block;
+		padding: 7px 14px;
+		font-size: 14px !important;
+		margin-bottom: 3px;
+		border: 2px solid transparent;
+		color: $text-color;
+		border-radius: 50%;
+		background: none;
+		width: 40px;
+		height: 40px;
+	}
+
+	a:hover, // sass-lint:disable-line force-pseudo-nesting
+	.current {
+		border-color: $accent-color;
+		color: $accent-color;
+	}
+
+	.prev,
+	.next,
+	.nav-previous,
+	.nav-next {
+		width: auto;
+		border-radius: 26px;
+
+		a {
+			width: auto;
+			border-radius: 26px;
+		}
+	}
+
+	.prev {
+		padding-left: 30px;
+	}
+
+	.next {
+		padding-right: 30px;
+	}
+
+	.nav-links {
+		@include clearfix;
+	}
+
+	.nav-previous {
+		float: left;
+
+		a {
+			padding-left: 30px;
+		}
+	}
+
+	.nav-next {
+		float: right;
+
+		a {
+			padding-right: 30px;
+		}
+	}
+}
+
+.comment-navigation {
+	margin: 30px 0;
+}
+
+.page-links {
+	margin: 35px 0;
+
+	.page-number {
+		display: inline-block;
+		padding: 4px 14px;
+		font-size: 14px !important;
+		margin-bottom: 3px;
+		border: 1px solid $text-color;
+		color: $text-color;
+		background: none;
+
+		&:hover {
+			border-color: $button-bg-color;
+			color: $button-text-color;
+			background-color: $button-bg-color;
+		}
+	}
+
+	> .page-number {
+		border-color: $button-bg-color;
+		color: $button-text-color;
+		background-color: $button-bg-color;
+	}
+
+	> a,
+	> span {
+		&:first-child {
+			margin-left: 10px;
+		}
+	}
+}
+
+/* Social Icons
+=================================== */
+.list-social-icons {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: inline-block;
+		margin: 1px;
+	}
+}
+
+.social-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: $text-color;
+	border-radius: 50%;
+	width: 46px;
+	height: 46px;
+	border: 1px solid $text-color;
+	font-size: 18px;
+
+	&:hover {
+		color: $accent-color;
+		border-color: $accent-color;
+	}
+
+	.header & {
+		color: inherit;
+		font-size: inherit;
+	}
+
+	.footer-info & {
+		color: currentColor;
+		border: 0;
+		width: auto;
+		height: auto;
+		margin: 0 3px;
+		font-size: 12px;
+	}
+
+	.list-social-icons-sm &,
+	.entry-author-box & {
+		width: 34px;
+		height: 34px;
+		font-size: 14px;
+	}
+}
+
+/* Videos
+=================================== */
+.video-trigger-icon {
+	@include play-icon;
+}
+
+/* Item sliders
+=================================== */
+.row-slider {
+	.slick-list {
+		@include media-breakpoint-up(sm) {
+			padding: 50px 15px;
+			margin: -50px -15px;
+		}
+	}
+
+	&.slick-initialized {
+		// Reset flex items when slick is initialized
+		[class^="col"] {
+			flex: auto;
+			max-width: 100%;
+		}
+	}
+}
+
+.row-slider-nav {
+	position: absolute;
+	width: 100%;
+	top: 10px;
+
+	.slick-next {
+		position: absolute;
+		right: 0;
+	}
+
+	.slick-prev {
+		position: absolute;
+		left: 0;
+	}
+
+	.slick-arrow {
+		@include slide-nav-arrow($color: $text-color);
+		opacity: .5;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.section-heading-left & {
+		position: static;
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		padding-left: 15px;
+		width: auto;
+
+		.slick-arrow {
+			position: static;
+			left: auto;
+			right: auto;
+		}
+
+		.slick-next {
+			margin-left: 10px;
+		}
+	}
+}

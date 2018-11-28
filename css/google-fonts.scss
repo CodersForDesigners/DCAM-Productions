@@ -1,0 +1,53 @@
+$filename: ibm-plex-sans-v3-cyrillic-ext_cyrillic_latin-ext_latin_vietnamese;
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('IBM Plex Sans'), local('IBMPlexSans'),
+       url('../fonts/#{$filename}-regular.woff2') format('woff2'),
+       url('../fonts/#{$filename}-regular.woff') format('woff'),
+       url('../fonts/#{$filename}-regular.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('IBM Plex Sans Italic'), local('IBMPlexSans-Italic'),
+       url('../fonts/#{$filename}-italic.woff2') format('woff2'),
+       url('../fonts/#{$filename}-italic.woff') format('woff'),
+       url('../fonts/#{$filename}-italic.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'),
+       url('../fonts/#{$filename}-700.woff2') format('woff2'),
+       url('../fonts/#{$filename}-700.woff') format('woff'),
+       url('../fonts/#{$filename}-700.ttf') format('truetype'),
+}
+
+$filename: ibm-plex-serif-v4-cyrillic-ext_cyrillic_latin-ext_latin_vietnamese;
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('IBM Plex Serif'), local('IBMPlexSerif'),
+       url('../fonts/#{$filename}-regular.woff2') format('woff2'),
+       url('../fonts/#{$filename}-regular.woff') format('woff'),
+       url('../fonts/#{$filename}-regular.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  font-style: normal;
+  font-weight: 600;
+  src: local('IBM Plex Serif SemiBold'), local('IBMPlexSerif-SemiBold'),
+       url('../fonts/#{$filename}-600.woff2') format('woff2'),
+       url('../fonts/#{$filename}-600.woff') format('woff'),
+       url('../fonts/#{$filename}-600.ttf') format('truetype'),
+}

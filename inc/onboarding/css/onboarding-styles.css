@@ -1,0 +1,79 @@
+.vidiho-pro-onboarding-wrap .wp-badge {
+  background: #fff;
+  padding: 50px 0;
+  height: auto;
+}
+
+.vidiho-pro-onboarding-wrap .wp-badge img {
+  width: 80px;
+  position: relative;
+  left: -5px;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-box {
+  background: #fff;
+  border-left: solid 4px #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  padding: 15px 15px 5px;
+  margin: 15px 0 30px 0;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-box .box-title {
+  margin: 0 0 5px 0;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-box .box-description {
+  font-size: 13px;
+  margin: 0;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-box-warning {
+  border-left: solid 4px red;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-box-info {
+  border-left: solid 4px orange;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-box-success {
+  border-left: solid 4px green;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-table tr {
+  border-bottom: solid 1px #ccc;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-table tr:nth-child(even) .vidiho-pro-onboarding-pro {
+  background: #9dba6f;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-table th {
+  font-weight: $font-weight-bold;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-table th, .vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-table td {
+  padding: 15px 8px;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-table .vidiho-pro-onboarding-col {
+  width: 150px;
+  text-align: center;
+}
+
+.vidiho-pro-onboarding-wrap .vidiho-pro-onboarding-table .vidiho-pro-onboarding-pro {
+  background: #92af64;
+  color: #fff;
+}
+
+.vidiho-pro-onboarding-wrap a.button-action {
+  margin: 0 auto;
+}
