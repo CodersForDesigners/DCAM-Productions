@@ -356,6 +356,7 @@ require_once get_theme_file_path( '/inc/scripts-styles.php' );
  */
 require_once get_theme_file_path( '/inc/sidebars-widgets.php' );
 // require_once get_theme_file_path( '/inc/widgets/lazaro-simple.php' );
+require_once get_theme_file_path( '/inc/widgets/lazaro-pricing-calculator-widget.php' );
 
 /**
  * Customizer controls.
