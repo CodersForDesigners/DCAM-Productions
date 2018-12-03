@@ -2641,7 +2641,7 @@ button.mfp-arrow:hover {
 }
 
 .form-newsletter input[type="email"] {
-  height: 54px;
+  /*height: 54px;*/
 }
 
 .form-newsletter [type="submit"] {

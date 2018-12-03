@@ -114,6 +114,7 @@ function vidiho_pro_load_widgets() {
 	require get_template_directory() . '/inc/widgets/latest-post-type.php';
 
 	require get_template_directory() . '/inc/widgets/home-newsletter.php';
+	require get_template_directory() . '/inc/widgets/lazaro-contact-form.php';
 	require get_template_directory() . '/inc/widgets/home-latest-posts.php';
 	require get_template_directory() . '/inc/widgets/home-latest-videos.php';
 	require get_template_directory() . '/inc/widgets/home-post-type-items.php';
@@ -125,6 +126,7 @@ function vidiho_pro_load_widgets() {
 	register_widget( 'CI_Widget_Latest_Post_Type' );
 
 	register_widget( 'CI_Widget_Home_Newsletter' );
+	register_widget( 'LZR_Widget_Contact_Form' );
 	register_widget( 'CI_Widget_Home_Latest_Posts' );
 	register_widget( 'CI_Widget_Home_Latest_Videos' );
 	register_widget( 'CI_Widget_Home_Post_Type_Items' );
@@ -149,6 +151,7 @@ function vidiho_pro_get_fullwidth_widgets() {
 		'ci-home-latest-videos',
 		'ci-home-post-type-items',
 		'ci-home-newsletter',
+		'lzr-contact-form',
 	) );
 }
 
