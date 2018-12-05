@@ -1070,28 +1070,11 @@ button.mfp-arrow:hover {
   background-color: #132f3f;
   color: #fff;
   text-align: center;
-  background: linear-gradient(45deg, #f77224, #7042ff),url(http://dcamproductions.com/wp-content/uploads/sites/2/2018/11/grunge-ink-texture-555x950.jpg); /* M: Added Gradient Texture */
-  background-blend-mode: multiply; /* M: Added Gradient Texture */
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(45deg, #3BA6FF, #005AEE),url('http://dcamproductions.com/wp-content/uploads/sites/2/2018/12/whirlpool.png');
+  background-blend-mode: multiply;
+  background-repeat: repeat;
+  background-size: auto;
   background-position: top center;
-}
-
-@media (min-width: 767px) {
-	.page-hero {
-		background: linear-gradient(45deg, #f77224, #7042ff),url(http://dcamproductions.com/wp-content/uploads/sites/2/2018/11/grunge-ink-texture-1024x697.jpg); /* M: Added Gradient Texture */
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: top center;
-	}
-}
-@media (min-width: 1200px){
-	.page-hero {
-		background: linear-gradient(45deg, #f77224, #7042ff),url(http://dcamproductions.com/wp-content/uploads/sites/2/2018/11/grunge-ink-texture-e1543313438543.jpg); /* M: Added Gradient Texture */
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: top center;
-	}
 }
 
 .page-hero::before {
