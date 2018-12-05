@@ -6,6 +6,11 @@
 		padding: 60px 0;
 		color: #FFFFFF;
 		background-color: #005AEE;
+		background: linear-gradient(45deg, #3BA6FF, #005AEE),url(http://dcamproductions.com/wp-content/uploads/sites/2/2018/12/whirlpool.png);
+		background-blend-mode: multiply;
+		background-repeat: repeat;
+		background-size: auto;
+		background-position: top center;
 	}
 
 	.pricing-section .title {
@@ -65,9 +70,9 @@
 	.pricing-section .radio-group .radio-input input:checked + span {
 		color: #FFFDE7;
 		/*border-color: #8BC34A;*/
-		border-color: #FD8320;
+		border-color: #FDA233;
 		/*background-color: #8BC34A;*/
-		background-color: #FD8320;
+		background-color: #FDA233;
 	}
 
 	.pricing-section .total {
@@ -80,7 +85,7 @@
 	}
 
 	.pricing-section .total .price {
-		color: #FD8320;
+		color: #FDA233;
 		white-space: nowrap;
 	}
 
