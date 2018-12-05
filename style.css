@@ -152,17 +152,17 @@ img {
 a {
   -webkit-transition: color .18s ease, background-color .18s ease, border-color .18s ease;
   transition: color .18s ease, background-color .18s ease, border-color .18s ease;
-  color: #1a93b1;
+  color: #FDA233;
   text-decoration: none;
 }
 
 a:hover {
-  color: #21b8dd;
+  color: #FD8320;
   text-decoration: none;
 }
 
 a:focus {
-  outline: 1px dotted #1a93b1;
+  outline: 1px dotted #FDA233;
 }
 
 .group::after {
@@ -2326,8 +2326,8 @@ button.mfp-arrow:hover {
 .footer-info {
   padding: 15px 0;
   font-size: 14px;
-  background: #132f3f;
-  color: #fff;
+  background: #1A84EE;
+  color: #FFFFFF;
 }
 
 .footer-copy {
