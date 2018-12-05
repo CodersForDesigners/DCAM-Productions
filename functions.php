@@ -346,6 +346,11 @@ require_once get_theme_file_path( '/inc/sanitization.php' );
  */
 require_once get_theme_file_path( '/inc/default-hooks.php' );
 
+/*
+ * Lazaro Hooks.
+ */
+require_once get_theme_file_path( '/inc/lazaro-hooks.php' );
+
 /**
  * Scripts and styles.
  */
