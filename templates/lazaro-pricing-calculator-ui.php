@@ -2,6 +2,12 @@
 ?>
 
 <style>
+	.pricing-section {
+		padding: 60px 0;
+		color: #FFFFFF;
+		background-color: #005AEE;
+	}
+
 	.pricing-section .title {
 		text-align: center
 	}
@@ -43,8 +49,8 @@
 		display: inline-block;
 		line-height: 30px;
 		width: 34px;
-		color: #607D8B;
-		border: solid 2px #607D8B;
+		color: #D5D9E0;
+		border: solid 2px #D5D9E0;
 		border-radius: 100%;
 		cursor: pointer;
 		font-size: 15px;
@@ -58,20 +64,36 @@
 
 	.pricing-section .radio-group .radio-input input:checked + span {
 		color: #FFFDE7;
-		border-color: #8BC34A;
-		background-color: #8BC34A;
+		/*border-color: #8BC34A;*/
+		border-color: #FD8320;
+		/*background-color: #8BC34A;*/
+		background-color: #FD8320;
 	}
 
 	.pricing-section .total {
 		position: relative;
 		display: inline-block;
 		margin: 0 auto 1.5rem;
-		border-top: solid 2px #607D8B;
-		border-bottom: solid 2px #607D8B;
+		border-top: solid 2px #D5D9E0;
+		border-bottom: solid 2px #D5D9E0;
 		padding: 10px 0;
 	}
 
+	.pricing-section .total .price {
+		color: #FD8320;
+		white-space: nowrap;
+	}
+
+	.pricing-section .question {
+		margin-bottom: 0;
+		font-weight: 400;
+		text-transform: none;
+	}
+
 	@media (min-width: 992px){
+		.pricing-section {
+			padding: 100px 0;
+		}
 		.pricing-section .description {
 			width:80%;
 		}
@@ -84,7 +106,7 @@
 
 </style>
 
-<div class="pricing-section">
+<div id="pricing" class="pricing-section">
 	<div class="row justify-content-center">
 		<form class="col-10 text-center js_cost_estimator">
 			<div class="section-heading">
@@ -95,14 +117,13 @@
 			</div>
 
 			<h2 class="total">
-				<span>Estimated Budget Range:</span>
-				<span class="js_min_estimate">6.51</span>
-				<span>—</span>
-				<span class="js_max_estimate">8.82</span>
-				<span>L</span>
+				<span>Estimated Budget Range</span>
+				<span class="price">
+					<span class="js_min_estimate">6.51</span><span> — </span><span class="js_max_estimate">8.82</span><span>L</span>
+				</span>
 			</h2>
 
-			<div class="section-subtitle">How many **cities would we have to shoot in?</div>
+			<h4 class="question">How many **cities would we have to shoot in?</h6>
 				<div class="radio-group">
 					<label class="radio-input block-inline"><input type="radio" name="city" value="1" class="js_input_cities" checked><span>1</span></label>
 					<label class="radio-input block-inline"><input type="radio" name="city" value="2" class="js_input_cities"><span>2</span></label>
@@ -110,7 +131,7 @@
 					<label class="radio-input block-inline"><input type="radio" name="city" value="4" class="js_input_cities"><span>4</span></label>
 					<label class="radio-input block-inline"><input type="radio" name="city" value="5" class="js_input_cities"><span>5</span></label>
 				</div>
-			<div class="section-subtitle">How many *locations would we need to shoot at?</div>
+			<h4 class="question">How many *locations would we need to shoot at?</h6>
 				<div class="radio-group">
 					<label class="radio-input block-inline"><input type="radio" name="location" value="1" class="js_input_locations" checked><span>1</span></label>
 					<label class="radio-input block-inline"><input type="radio" name="location" value="2" class="js_input_locations"><span>2</span></label>
@@ -118,7 +139,7 @@
 					<label class="radio-input block-inline"><input type="radio" name="location" value="4" class="js_input_locations"><span>4</span></label>
 					<label class="radio-input block-inline"><input type="radio" name="location" value="5" class="js_input_locations"><span>5</span></label>
 				</div>
-			<div class="section-subtitle">Number of iterations included on script and edit.</div>
+			<h4 class="question">Number of iterations included on script and edit.</h6>
 				<div class="radio-group">
 					<label class="radio-input block-inline"><input type="radio" name="iteration" value="1" class="js_input_iterations" disabled><span>1</span></label>
 					<label class="radio-input block-inline"><input type="radio" name="iteration" value="2" class="js_input_iterations" checked><span>2</span></label>
