@@ -9,6 +9,9 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 			'form_name'         => '',
 			'form_number'       => '',
 			'form_email'        => '',
+			'form_company'      => '',
+			'form_message'      => '',
+			'form_message_preset_format'=> '',
 			'form_action'       => '',
 			'title_center'      => 1,
 			'background_color'  => '',
@@ -40,6 +43,9 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 			$form_name    = $instance['form_name'];
 			$form_number  = $instance['form_number'];
 			$form_email   = $instance['form_email'];
+			$form_company = $instance['form_company'];
+			$form_message = $instance['form_message'];
+			$form_message_preset_format = $instance['form_message_preset_format'];
 			$form_action  = $instance['form_action'];
 			$title_center = $instance['title_center'];
 
@@ -55,6 +61,82 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 
 				.form-contact input {
 					margin: 0 0 0.5rem;
+				}
+
+				.form-contact label {
+					position: relative;
+					margin: 0.1rem 0 0;
+				}
+				.form-contact label span {
+					position: relative;
+					display: inline-block;
+					padding: 0.2rem 0.3rem;
+					font-weight: normal;
+					opacity: 0.8;
+					text-transform: capitalize;
+					overflow: hidden;
+				}
+				.form-contact label span:after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 5px;
+					width: 100%;
+					height: 2px;
+					/*background-color: #005AEE;*/
+					background-color: #1a93b1;
+					transform-origin: left center;
+					transform: translateX( -1% ) scale( 0 );
+					transition: transform 0.25s 0.1s ease-in-out,
+								opacity 0.25s 0.1s ease-in-out;
+					opacity: 0;
+				}
+				.form-contact label:focus-within span:after {
+					transform: translateX( -1% ) scale( 1 );
+					opacity: 1;
+					transition: transform 0.36s ease-in-out,
+								opacity 0.15s ease-in;
+				}
+				/* The submit button, after a successful form submission */
+				.form-contact .success[ type = "submit" ] {
+					color: currentColor;
+					border-radius: 0;
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					cursor: auto;
+					pointer-events: none;
+				}
+				.form-contact .success[ type = "submit" ] i {
+					display: none;
+				}
+
+				@media ( max-width: 640px ) {
+					.form-contact [ type = "submit" ] {
+						display: block;
+						float: none;
+						margin-left: auto;
+						margin-right: auto;
+						width: 91%;
+					}
+					.form-contact [ type = "submit" ] span {
+						letter-spacing: 0.1em;
+						font-size: 0.9rem;
+					}
+				}
+				@media ( min-width: 640px ) {
+					.form-contact label {
+						margin: 0.5rem 0 0;
+					}
+					.form-contact label span {
+						padding: 0.2rem 0.4rem;
+					}
+					.form-contact label span:after {
+						transform: translateX( 4% ) scale( 0 );
+					}
+					.form-contact label:focus-within span:after {
+						transform: translateX( 4% ) scale( 1 );
+					}
 				}
 
 			</style>
@@ -110,14 +192,30 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 
 									<form action="<?php echo esc_url( $form_action ); ?>" class="form-newsletter form-contact">
 
-										<label for="contact-name" class="sr-only"><?php esc_html_e( 'Your name', 'vidiho-pro' ); ?></label>
-										<input name="<?php echo esc_attr( $form_name ); ?>" type="text" id="contact-name" placeholder="<?php esc_attr_e( 'Your name', 'vidiho-pro' ); ?>">
+										<label for="contact-name">
+											<span><?php esc_html_e( 'Name', 'vidiho-pro' ); ?></span>
+											<input name="<?php echo esc_attr( $form_name ); ?>" type="text" id="contact-name" required>
+										</label>
 
-										<label for="contact-number" class="sr-only"><?php esc_html_e( 'Your number', 'vidiho-pro' ); ?></label>
-										<input name="<?php echo esc_attr( $form_number ); ?>" type="text" id="contact-number" placeholder="<?php esc_attr_e( 'Your number', 'vidiho-pro' ); ?>">
+										<label for="contact-number">
+											<span><?php esc_html_e( 'Number', 'vidiho-pro' ); ?></span>
+											<input name="<?php echo esc_attr( $form_number ); ?>" type="text" id="contact-number" required>
+										</label>
 
-										<label for="contact-email" class="sr-only"><?php esc_html_e( 'Your email', 'vidiho-pro' ); ?></label>
-										<input name="<?php echo esc_attr( $form_email ); ?>" type="email" id="contact-email" placeholder="<?php esc_attr_e( 'Your email', 'vidiho-pro' ); ?>">
+										<label for="contact-email">
+											<span><?php esc_html_e( 'Email', 'vidiho-pro' ); ?></span>
+											<input name="<?php echo esc_attr( $form_email ); ?>" type="text" id="contact-email" required>
+										</label>
+
+										<label for="contact-company">
+											<span><?php esc_html_e( 'Company', 'vidiho-pro' ); ?></span>
+											<input name="<?php echo esc_attr( $form_company ); ?>" type="text" id="contact-company" required>
+										</label>
+
+										<label for="contact-message">
+											<span><?php esc_html_e( 'Message', 'vidiho-pro' ); ?></span>
+											<textarea name="<?php echo esc_attr( $form_message ); ?>" id="contact-message"></textarea>
+										</label>
 
 										<button class="btn btn-sm" type="submit">
 											<?php
@@ -138,6 +236,11 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 
 				jQuery( function ( $ ) {
 
+					/*
+					 *
+					 * On submitting the form
+					 *
+					 */
 					$( ".form-contact" ).on( "submit", function ( event ) {
 
 						event.preventDefault();
@@ -149,7 +252,7 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 						 * Show some feedback to the user
 						 *
 						 */
-						$form.find( "input, button" ).prop( "disabled", true );
+						$form.find( "input, textarea, button" ).prop( "disabled", true );
 						$form.find( "[ type = submit ] span" ).text( "Sending" );
 
 						/*
@@ -160,6 +263,8 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 						var $name = $form.find( "[ name = name ]" );
 						var $email = $form.find( "[ name = email ]" );
 						var $phoneNumber = $form.find( "[ name = phone ]" );
+						var $company = $form.find( "[ name = company ]" );
+						var $message = $form.find( "[ name = message ]" );
 
 
 
@@ -172,7 +277,9 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 						var data = {
 							username: $name.val(),	// the parameter "name" is used by WordPress
 							email: $email.val(),
-							phoneNumber: $phoneNumber.val()
+							phoneNumber: $phoneNumber.val(),
+							company: $company.val(),
+							message: $message.val()
 						};
 						var sendContactDeets = $.ajax( {
 							url: $form.attr( "action" ),
@@ -181,17 +288,24 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 						} );
 
 						sendContactDeets.done( function () {
-							alert( "Alright. We'll call you." );
-							$form.get( 0 ).reset();
+							// alert( "Alright. We'll call you." );
+							$form
+								.find( "[ type = submit ]" )
+									.addClass( "success" )
+								.find( "span" )
+									.text( "We'll get in touch." )
+									.prop( "disabled", false );
+							$form.off( "submit" );
+
 						} );
 
 						sendContactDeets.fail( function () {
 							alert( "Something wen't wrong! :(" );
+							$form.find( "[ type = submit ] span" ).text( "Send" );
+							$form.find( "input, textarea, button" ).prop( "disabled", false );
 						} );
 
 						sendContactDeets.always( function () {
-							$form.find( "input, button" ).prop( "disabled", false );
-							$form.find( "[ type = submit ] span" ).text( "Send" );
 						} );
 
 					} );
@@ -203,6 +317,10 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 			<?php
 
 			echo $after_widget;
+
+			// Load the Utility functions
+			wp_enqueue_script( 'lazaro-util-scripts' );
+
 		}
 
 		function update( $new_instance, $old_instance ) {
@@ -213,8 +331,11 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 			$instance['image_id']     = vidiho_pro_sanitize_intval_or_empty( $new_instance['image_id'] );
 			$instance['text']         = wp_kses( $new_instance['text'], vidiho_pro_get_allowed_tags() );
 			$instance['form_name']   = sanitize_text_field( $new_instance['form_name'] );
-			$instance['form_email']   = sanitize_text_field( $new_instance['form_email'] );
 			$instance['form_number']   = sanitize_text_field( $new_instance['form_number'] );
+			$instance['form_email']   = sanitize_text_field( $new_instance['form_email'] );
+			$instance['form_company']   = sanitize_text_field( $new_instance['form_company'] );
+			$instance['form_message']   = sanitize_text_field( $new_instance['form_message'] );
+			$instance['form_message_preset_format']   = sanitize_text_field( $new_instance['form_message_preset_format'] );
 			$instance['form_action']  = esc_url_raw( $new_instance['form_action'] );
 			$instance['title_center'] = isset( $new_instance['title_center'] );
 
@@ -236,6 +357,9 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 			$form_name    = $instance['form_name'];
 			$form_number  = $instance['form_number'];
 			$form_email   = $instance['form_email'];
+			$form_company = $instance['form_company'];
+			$form_message = $instance['form_message'];
+			$form_message_preset_format = $instance['form_message_preset_format'];
 			$form_action  = $instance['form_action'];
 			$title_center = $instance['title_center'];
 
@@ -271,9 +395,13 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 
 			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title_center' ) ); ?>"><input type="checkbox" name="<?php echo esc_attr( $this->get_field_name( 'title_center' ) ); ?>" id="<?php echo esc_attr( $this->get_field_id( 'title_center' ) ); ?>" value="1" <?php checked( $title_center, 1 ); ?> /><?php esc_html_e( 'Show the title in the center.', 'vidiho-pro' ); ?></label></p>
 
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'form_message_preset_format' ) ); ?>"><?php esc_html_e( 'Message Template ( enclose variables like so: "I need to shoot in {{ locations }} locations." )', 'vidiho-pro' ); ?></label><input id="<?php echo esc_attr( $this->get_field_id( 'form_message_preset_format' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'form_message_preset_format' ) ); ?>" type="text" value="<?php echo esc_attr( $form_message_preset_format ); ?>" class="widefat" /></p>
+
 			<p><label for="<?php echo esc_attr( $this->get_field_id( 'form_name' ) ); ?>"><?php esc_html_e( 'INTERNAL: Name\'s "name" attribute:', 'vidiho-pro' ); ?></label><input id="<?php echo esc_attr( $this->get_field_id( 'form_name' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'form_name' ) ); ?>" type="text" value="<?php echo esc_attr( $form_name ); ?>" class="widefat" /></p>
 			<p><label for="<?php echo esc_attr( $this->get_field_id( 'form_number' ) ); ?>"><?php esc_html_e( 'INTERNAL: Phone number\'s "name" attribute:', 'vidiho-pro' ); ?></label><input id="<?php echo esc_attr( $this->get_field_id( 'form_number' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'form_number' ) ); ?>" type="text" value="<?php echo esc_attr( $form_number ); ?>" class="widefat" /></p>
 			<p><label for="<?php echo esc_attr( $this->get_field_id( 'form_email' ) ); ?>"><?php esc_html_e( 'INTERNAL: Email\'s "name" attribute:', 'vidiho-pro' ); ?></label><input id="<?php echo esc_attr( $this->get_field_id( 'form_email' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'form_email' ) ); ?>" type="text" value="<?php echo esc_attr( $form_email ); ?>" class="widefat" /></p>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'form_company' ) ); ?>"><?php esc_html_e( 'INTERNAL: Company\'s "name" attribute:', 'vidiho-pro' ); ?></label><input id="<?php echo esc_attr( $this->get_field_id( 'form_company' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'form_company' ) ); ?>" type="text" value="<?php echo esc_attr( $form_company ); ?>" class="widefat" /></p>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'form_message' ) ); ?>"><?php esc_html_e( 'INTERNAL: Message\'s "name" attribute:', 'vidiho-pro' ); ?></label><input id="<?php echo esc_attr( $this->get_field_id( 'form_message' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'form_message' ) ); ?>" type="text" value="<?php echo esc_attr( $form_message ); ?>" class="widefat" /></p>
 			<p><label for="<?php echo esc_attr( $this->get_field_id( 'form_action' ) ); ?>"><?php esc_html_e( 'Form Action URL:', 'vidiho-pro' ); ?></label><input id="<?php echo esc_attr( $this->get_field_id( 'form_action' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'form_action' ) ); ?>" type="text" value="<?php echo esc_url( $form_action ); ?>" class="widefat" /></p>
 
 			<fieldset class="ci-collapsible">

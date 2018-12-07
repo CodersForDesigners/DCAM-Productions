@@ -26,15 +26,18 @@ require_once __DIR__ . '/../inc/mailer.php';
 $name = $_POST[ 'username' ];
 $phoneNumber = $_POST[ 'phoneNumber' ];
 $email = $_POST[ 'email' ];
+$company = $_POST[ 'company' ];
+$message = $_POST[ 'message' ] ?? '';
 
-if ( empty( $name ) or empty( $phoneNumber ) or empty( $email ) )
+if ( empty( $name ) or empty( $phoneNumber ) or empty( $email ) or empty( $company ) )
 	exit;
 
 $body = <<<BOUNDARY
 
 <p>
-	{$name} visited the website and left his/her/their phone number ( {$phoneNumber} ) and email address ( {$email} ).
+	{$name} visited the website and left his/her/their phone number ( {$phoneNumber} ) and email address ( {$email} ). {$name} works at {$company} and left the following message:
 </p>
+<p>{$message}</p>
 <p>
 	Now do something about it.
 </p>
