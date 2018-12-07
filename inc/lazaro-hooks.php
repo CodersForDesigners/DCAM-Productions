@@ -57,6 +57,15 @@ function register_lazaro_files () {
 
 	$theme = wp_get_theme();
 
+	// Utility functions
+	wp_register_script(
+		'lazaro-util-scripts',	// slug identifier
+		get_template_directory_uri() . '/js/utils.js',
+		[ 'jquery' ],	// queue it after jQuery
+		$theme->get( 'Version' ),
+		true	// queue it in the footer
+	);
+
 }
 
 add_action( 'init', 'register_lazaro_files' );

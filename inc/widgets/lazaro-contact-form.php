@@ -297,6 +297,9 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 									.prop( "disabled", false );
 							$form.off( "submit" );
 
+							// Track the submission
+							__UTIL.openPageInIframe( "/track?for=contact-form-submit", "Contact Form Submitted", { closeOnLoad: true } );
+
 						} );
 
 						sendContactDeets.fail( function () {
