@@ -238,6 +238,26 @@ if ( ! class_exists( 'LZR_Widget_Contact_Form' ) ) :
 
 					/*
 					 *
+					 * When the cost estimates change, update the message field
+					 *
+					 */
+					var autoFillMessageField = function () {
+						var autoFillable = false;
+						return function autoFillMessageField ( event, data ) {
+							if ( ! autoFillable ) {
+								autoFillable = true;
+								return;
+							}
+							var messageFormat = "<?php echo $form_message_preset_format ?>";
+							var message = __UTIL.renderTemplate( messageFormat, data );
+							$( ".form-contact" ).find( "[ name = message ]" ).val( message );
+						}
+
+					}();
+					$( document ).on( "cost-estimate/update", autoFillMessageField );
+
+					/*
+					 *
 					 * On submitting the form
 					 *
 					 */
