@@ -166,8 +166,6 @@
 
 </div>
 
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/xlsx-calc-v0.4.1.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/spreadsheet-formulae.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
 <script type="text/javascript">
 
@@ -224,15 +222,16 @@
 
 
 
-	/*
-	 *
-	 * Extend the XLSX-CALC library with s'more formulae
-	 *
-	 */
-	XLSX_CALC.import_functions( spreadsheetFormulae );
-
 	// Set up the interactions for the cost estimator
 	jQuery( function ( $ ) {
+
+		/*
+		 *
+		 * Extend the XLSX-CALC library with s'more formulae
+		 *
+		 */
+		XLSX_CALC.import_functions( spreadsheetFormulae );
+
 		function getSelectedInputs ( $form ) {
 			var cities = $form.find( ".js_input_cities:checked" ).val();
 			var locations = $form.find( ".js_input_locations:checked" ).val();
@@ -270,6 +269,10 @@
 					var maxEstimate = sheet.C11.v;
 					countToNumber( $form.find( ".js_min_estimate" ), minEstimate, { for: "random", round: 2, INR: true } );
 					countToNumber( $form.find( ".js_max_estimate" ), maxEstimate, { for: "random", round: 2, INR: true } );
+
+					// Broadcast the input data for use in other components
+					$( document ).trigger( "cost-estimate/update", inputData );
+
 				} )
 
 				// Show the Cost Estimator

@@ -9,10 +9,9 @@
 /*
  *
  * TODO:
- * 1. Do not pull CSS and JS files as many times as there are instances of this widget.
- * 2. Track the selected file in the media library on re-opening it.
- * 3. Update version of XLSX-CALC.
- * 4. Add the processed workbook "formally" to the media library. Creating and deleting it through the FileSystem API ain't cutting it.
+ * 1. Track the selected file in the media library on re-opening it.
+ * 2. Update version of XLSX-CALC.
+ * 3. Add the processed workbook "formally" to the media library. Creating and deleting it through the FileSystem API ain't cutting it.
  *
  */
 
@@ -27,49 +26,31 @@ class WidgetCostEstimator extends WP_Widget {
 	}
 
 	public function widget ( $args, $instance ) {
-		// Dump all the function arguments on the console
-		?>
-			<script type="text/javascript">
-				console.log( "$args:" )
-				console.log( <?php echo json_encode( $args ) ?> )
-				console.log( "$instance:" )
-				console.log( <?php echo json_encode( $instance ) ?> )
-			</script>
-		<?php
+
 		// The "Before" widget markup, i.e. closing / opening tag(s)
 		echo $args[ 'before_widget' ];
 
-		// if ( ! empty( $instance[ 'title' ] ) )
-		// 	echo $args[ 'before_title' ]
-		// 		. apply_filters( 'widget_title', $instance[ 'title' ] )
-		// 		. $args[ 'after_title' ];
-
+		// The "meat" of the UI
 		echo $this->render( $instance );
-		// function render ( $template, $context = [ ] ) {
-		// 	extract( $context );
-		// 	ob_start();
-		// 	require $template;
-		// 	return ob_get_clean();
-		// }
-
-		?>
-
-		<?php
 
 		// The "After" widget markup, i.e. closing / opening tag(s)
 		echo $args[ 'after_widget' ];
 
-		// wp_enqueue_script( 'xlsx-calc', get_template_directory_uri() . '/js/xlsx-calc-v0.4.1.js', [ ], $theme->get( 'Version' ), true );
+		// Load the Spreadsheet Formula Calculator library, i.e. XLSX Calc
+		wp_enqueue_script( 'lazaro-xlsx-calc' );
+		// Load our custom spreadsheet formulae implementations
+		wp_enqueue_script( 'lazaro-spreadsheet-formulae' );
 
 	}
 
 	public function form ( $instance ) {
+
 		$description = $instance[ 'description' ] ?? '';
 		$title = $instance[ 'title' ] ?? '';
 		// Spreadsheet file-related data
 		$spreadsheetBaseDir = $instance[ 'spreadsheet_base_dir' ] ?? '';
 		$spreadsheetFilename = $instance[ 'spreadsheet_filename' ] ?? '';
-		// $spreadsheet = $instance[ 'spreadsheet' ] ?? '';
+
 		?>
 			<p>
 				<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ) ?>">
@@ -133,6 +114,7 @@ class WidgetCostEstimator extends WP_Widget {
 
 			</script>
 		<?php
+
 	}
 
 	public function update ( $new_instance, $old_instance ) {

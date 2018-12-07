@@ -66,6 +66,24 @@ function register_lazaro_files () {
 		true	// queue it in the footer
 	);
 
+	// The Spreadsheet Formula Calculator library, i.e. XLSX Calc
+	wp_register_script(
+		'lazaro-xlsx-calc',	// slug identifier
+		get_template_directory_uri() . '/js/xlsx-calc-v0.4.1.js',
+		[ ],	// does not depend on any other library
+		$theme->get( 'Version' ),
+		true	// queue it in the footer
+	);
+
+	// Our custom spreadsheet formulae implementations
+	wp_register_script(
+		'lazaro-spreadsheet-formulae',	// slug identifier
+		get_template_directory_uri() . '/js/spreadsheet-formulae.js',
+		[ ],	// does not depend on any other library
+		$theme->get( 'Version' ),
+		true	// queue it in the footer
+	);
+
 }
 
 add_action( 'init', 'register_lazaro_files' );
