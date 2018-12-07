@@ -48,3 +48,16 @@ add_action( 'wp_footer', function () {
 
 	<?php
 } );
+
+function queue_lazaro_files () {
+
+}
+
+function register_lazaro_files () {
+
+	$theme = wp_get_theme();
+
+}
+
+add_action( 'init', 'register_lazaro_files' );
+add_action( 'wp_enqueue_scripts', 'queue_lazaro_files' );
