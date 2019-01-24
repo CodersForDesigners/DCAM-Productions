@@ -6,7 +6,7 @@
 		padding: 60px 0;
 		color: #FFFFFF;
 		background-color: #005AEE;
-		background: linear-gradient(45deg, #3BA6FF, #005AEE),url(http://dcamproductions.com/wp-content/uploads/sites/2/2018/12/whirlpool.png);
+		background: linear-gradient(45deg, #3BA6FF, #005AEE),url(/wp-content/uploads/sites/2/2018/12/whirlpool.png);
 		background-blend-mode: multiply;
 		background-repeat: repeat;
 		background-size: auto;

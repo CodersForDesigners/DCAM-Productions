@@ -4,7 +4,7 @@ Theme URI: https://www.cssigniter.com/themes/vidiho-pro/
 Author: CSSIgniter
 Author URI: https://www.cssigniter.com/
 Description: Video theme for WordPress
-Version: 1.1
+Version: 1.1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: vidiho-pro
@@ -1070,7 +1070,7 @@ button.mfp-arrow:hover {
   background-color: #132f3f;
   color: #fff;
   text-align: center;
-  background: linear-gradient(45deg, #3BA6FF, #005AEE),url('http://dcamproductions.com/wp-content/uploads/sites/2/2018/12/whirlpool.png');
+  background: linear-gradient(45deg, #3BA6FF, #005AEE),url('/wp-content/uploads/sites/2/2018/12/whirlpool.png');
   background-blend-mode: multiply;
   background-repeat: repeat;
   background-size: auto;
