@@ -1,0 +1,99 @@
+
+<style type="text/css">
+
+	.form-contact input {
+		margin: 0 0 0.5rem;
+	}
+
+</style>
+
+<section class="widget-section widget_ci-home-newsletter">
+	<div class="widget-section-newsletter">
+		<div class="row justify-content-center">
+			<div class="col-10">
+				<div class="section-heading ">
+					<div class="section-heading-content">
+						<h2 class="section-title">Would you like us to tell your story?</h2>
+						<p class="section-subtitle">Fill in your details and we’ll get back to you.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="widget-section-newsletter-thumb">
+							<img src="/wp-content/uploads/sites/2/2018/08/aboutme3.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-12">
+						<div class="widget-section-newsletter-content">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+							<form action="/contact-form/" class="form-contact form-newsletter">
+								<label for="contact-name" class="sr-only">Your name</label>
+								<input id="contact-name" name="name" type="text" placeholder="Your name" required>
+								<label for="contact-number" class="sr-only">Your number</label>
+								<input id="contact-number" name="phone" type="text" placeholder="Your number" required>
+								<label for="contact-email" class="sr-only">Your email</label>
+								<input id="contact-email" name="email" type="email" placeholder="Your email" required>
+
+								<button class="btn btn-sm" type="submit">Send <i class="far fa-arrow-alt-circle-right"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript">
+
+jQuery( function ( $ ) {
+
+	$( ".form-contact" ).on( "submit", function ( event ) {
+
+		event.preventDefault();
+
+		var $form = $( event.target );
+
+		/*
+		 *
+		 * Fetch the various fields
+		 *
+		 */
+		var $name = $form.find( "[ name = name ]" );
+		var $email = $form.find( "[ name = email ]" );
+		var $phoneNumber = $form.find( "[ name = phone ]" );
+
+		/*
+		 *
+		 * Send it
+		 *
+		 */
+		var data = {
+			username: $name.val(),	// the parameter "name" is used by WordPress
+			email: $email.val(),
+			phoneNumber: $phoneNumber.val()
+		};
+		var sendContactDeets = $.ajax( {
+			url: $form.attr( "action" ),
+			method: "POST",
+			data: data
+		} );
+
+		sendContactDeets.done( function () {
+			alert( "Alright. We'll call you." );
+		} );
+
+		sendContactDeets.fail( function () {
+			alert( "Something wen't wrong! :(" );
+			$form.get( 0 ).reset();
+		} );
+
+	} );
+
+} );
+
+</script>

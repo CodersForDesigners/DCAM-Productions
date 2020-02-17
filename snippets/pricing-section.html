@@ -1,0 +1,135 @@
+<!-- 
+	* Pricing Section *
+	Contains HTML & CSS needed to Display The Cost Calculator in the Home Page
+	Note: Copy & Paste it's contents into a custom HTML widget through the WordPress Customizer.
+ -->
+
+<style>
+	.pricing-section .title {
+		text-align: center
+	}
+	.pricing-section .description {
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+
+	.block-inline {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+
+	.pricing-section .radio-group {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		white-space: nowrap;
+		font-size: 0;
+	}
+
+	.pricing-section .radio-group .radio-input {
+		position: relative;
+		text-align: center;
+		width: 20%;
+	}
+
+	.pricing-section .radio-group .radio-input input {
+		position: absolute;
+		opacity: 0;
+		z-index: 1;
+	}
+
+	.pricing-section .radio-group .radio-input input + span {
+		position: relative;
+		z-index: 2;
+		display: inline-block;
+		line-height: 30px;
+		width: 34px;
+		color: #607D8B;
+		border: solid 2px #607D8B;
+		border-radius: 100%;
+		cursor: pointer;
+		font-size: 15px;
+		transition: color .3s ease-out, border .3s ease-out, background .3s ease-out;
+	}
+
+	.pricing-section .radio-group .radio-input input:disabled + span {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
+
+	.pricing-section .radio-group .radio-input input:checked + span {
+		color: #FFFDE7;
+		border-color: #8BC34A;
+		background-color: #8BC34A;
+	}
+
+	.pricing-section .total {
+		position: relative;
+		display: inline-block;
+		margin: 0 auto;
+		border-top: solid 2px #607D8B;
+		border-bottom: solid 2px #607D8B;
+		padding: 10px 0;
+	}
+
+	@media (min-width: 992px){
+		.pricing-section .description {
+			width:80%;
+		}
+
+		.pricing-section .radio-group {
+			width: 60%; 
+		}
+
+	}
+
+</style>
+
+<div class="pricing-section">
+	<div class="row justify-content-center">
+		<div class="col-10 text-center">
+			<div class="section-heading">
+				<div class="section-heading-content">
+					<h1 class="title">Cost Calculator</h1>
+					<p class="description">Estimating the cost of a Corporate Video accurately is quite challenging without a clear idea of a number of variables. Since most Corporate Films have unique and extremely specific demands, the most we can do is provide you with a budget range based on a few broad assumptions. Use the calculator below to estimate a ballpark price range for your Corporate Video.</p>
+				</div>
+			</div>
+			<div class="section-subtitle">How many *locations would we need to shoot at?</div>
+				<div class="radio-group">
+					<label class="radio-input block-inline"><input type="radio" name="location" checked="checked"><span>1</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="location"><span>2</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="location"><span>3</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="location"><span>4</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="location"><span>5</span></label>
+				</div>
+			<div class="section-subtitle">How many **cities would we have to shoot in?</div>
+				<div class="radio-group">
+					<label class="radio-input block-inline"><input type="radio" name="city" checked="checked"><span>1</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="city"><span>2</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="city"><span>3</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="city"><span>4</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="city"><span>5</span></label>
+				</div>
+			<div class="section-subtitle">Number of iterations included on script and edit.</div>
+				<div class="radio-group">
+					<label class="radio-input block-inline"><input type="radio" name="iteration" disabled="disabled"><span>1</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="iteration" checked="checked"><span>2</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="iteration"><span>3</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="iteration"><span>4</span></label>
+					<label class="radio-input block-inline"><input type="radio" name="iteration"><span>5</span></label>
+				</div>
+			
+			<h2 class="total">Estimated Budget Range: 6.51 — 8.82 Lakhs</h2>
+
+			<div class="disclaimers">
+				<small>*If you need to travel a minimum of 2 kms to reach the next location, then it counts as a second location</small><br>
+				<small>**Accomodation and Travel will be charged at actuals outside Bangalore City limits</small><br>
+				<small>This estimate is indicative and will not be considered a formal quote.</small><br>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
