@@ -1,77 +1,103 @@
 <?php
-
 /**
  * Template Name: Contact Form Handler
  */
 
-ini_set( "display_errors", 1 );
-ini_set( "error_reporting", E_ALL );
+require_once __DIR__ . '/../lib/http.php';
 
-// Set the timezone
+/**
+ |
+ | Script Bootstrapping
+ |
+ |
+ */
+# * - Error Reporting
+ini_set( 'display_errors', 1 );
+ini_set( 'error_reporting', E_ALL );
+# * - Request Permissions
+header( 'Access-Control-Allow-Origin: *' );
+# * - Date and Timezone
 date_default_timezone_set( 'Asia/Kolkata' );
-// Do not let this script timeout
+# * - Prevent Script Cancellation by Client
+ignore_user_abort( true );
+# * - Script Timeout
 set_time_limit( 0 );
 
-require_once __DIR__ . '/../inc/mailer.php';
+
+
+
+
+/**
+ |
+ | Response Preparation
+ |
+ |
+ */
+# Set Headers
+header_remove( 'X-Powered-By' );
+header( 'Content-Type: application/json' );
 
 
 
 
 
-/*
- *
- * Prepare the "envelope"
- *
+/**
+ |
+ | Request Parsing
+ |
+ |
  */
 $name = $_POST[ 'username' ];
 $phoneNumber = $_POST[ 'phoneNumber' ];
-$email = $_POST[ 'email' ];
+$emailAddress = $_POST[ 'email' ];
 $company = $_POST[ 'company' ];
 $message = $_POST[ 'message' ] ?? '';
 
-if ( empty( $name ) or empty( $phoneNumber ) or empty( $email ) or empty( $company ) )
+if ( empty( $name ) or empty( $phoneNumber ) or empty( $emailAddress ) or empty( $company ) ) {
+	ThisProject\HTTP::respond( [
+		'status' => 0,
+		'message' => 'Data not provided',
+	], 400 );
 	exit;
+}
 
-$body = <<<BOUNDARY
 
-<p>
-	{$name} visited the website and left his/her/their phone number ( {$phoneNumber} ) and email address ( {$email} ). {$name} works at {$company} and left the following message:
-</p>
-<p>{$message}</p>
-<p>
-	Now do something about it.
-</p>
 
-BOUNDARY;
 
-$envelope = [
-	'username' => 'google@lazaro.in',
-	'password' => 't34m,l4z4r0',
-	'from' => [
-		'email' => 'google@lazaro.in',
-		'name' => 'DCAM'
-	],
-	'to' => [
-		'email' => 'jude@lazaro.in',
-		// 'email' => 'mario@lazaro.in',
-		'name' => $name,
-		// 'additionalEmails' => [ 'mario@lazaro.in' ]
-	],
-	'subject' => 'DCAM Website Lead – ' . $name,
-	'body' => $body
+
+/**
+ |
+ | Import dependencies
+ |
+ |
+ */
+require_once __DIR__ . '/../lib/datetime.php';
+
+
+
+
+
+/**
+ |
+ | Prepare data for submission
+ |
+ |
+ */
+$data = [
+	'entry.125001999' => ThisProject\DateTime::getCurrentTimestamp__SpreadsheetCompatible(),
+	'entry.586112043' => $name,
+	'entry.425291794' => $phoneNumber,
+	'entry.1650789803' => $emailAddress,
+	'entry.979150883' => $company,
+	'entry.1426017662' => $message,
 ];
 
+ThisProject\HTTP::post( 'https://docs.google.com/forms/d/e/1FAIpQLSdhH4LrFXu_dLDZ-p1v7yPlmP4KbXnDcj2gD6zZKKdwQxzg-w/formResponse', [
+	'data' => $data,
+	'contentType' => 'multipart/form-data'
+] );
 
-
-/*
- *
- * "Post" the mail
- *
- */
-try {
-	$response[ 'status' ] = 0;
-	$response[ 'message' ] = Mailer\send( $envelope );
-} catch ( \Exception $e ) {
-	$response[ 'status' ] = 1;
-}
-die( json_encode( $response ) );
+ThisProject\HTTP::respond( [
+	'status' => 0,
+	'message' => 'All good.',
+] );
